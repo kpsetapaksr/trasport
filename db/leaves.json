@@ -1,0 +1,1965 @@
+[
+  {
+    "_id": "694e5f96b4e710ebe4ec981e",
+    "id": "LV-TZ61VR6XB",
+    "doctorId": "d2",
+    "date": "2026-01-01",
+    "type": "full",
+    "reason": "OFF DAY",
+    "__v": 0
+  },
+  {
+    "_id": "694e5faab4e710ebe4ec9829",
+    "id": "LV-1K13QOK1A",
+    "doctorId": "d2",
+    "date": "2026-01-02",
+    "type": "full",
+    "reason": "OFF DAY",
+    "__v": 0
+  },
+  {
+    "_id": "694e5fc98d9e54ac83e79d31",
+    "id": "LV-8V13B88DP",
+    "doctorId": "d2",
+    "date": "2026-01-04",
+    "type": "full",
+    "reason": "OFF DAY",
+    "__v": 0
+  },
+  {
+    "_id": "694e5fd5c5063a6e42c909a7",
+    "id": "LV-VPDQU0SZ1",
+    "doctorId": "d2",
+    "date": "2026-01-06",
+    "type": "full",
+    "reason": "OFF DAY",
+    "__v": 0
+  },
+  {
+    "_id": "694e5fdf8d9e54ac83e79d3d",
+    "id": "LV-N9QW3BK2V",
+    "doctorId": "d2",
+    "date": "2026-01-08",
+    "type": "full",
+    "reason": "OFF DAY",
+    "__v": 0
+  },
+  {
+    "_id": "694e5fe8c5063a6e42c909b3",
+    "id": "LV-6RH1WTAN3",
+    "doctorId": "d2",
+    "date": "2026-01-09",
+    "type": "full",
+    "reason": "OFF DAY",
+    "__v": 0
+  },
+  {
+    "_id": "694e5ff18d9e54ac83e79d49",
+    "id": "LV-D84EIJEUA",
+    "doctorId": "d2",
+    "date": "2026-01-11",
+    "type": "full",
+    "reason": "OFF DAY",
+    "__v": 0
+  },
+  {
+    "_id": "694e600bc5063a6e42c909c1",
+    "id": "LV-EGOJN02FQ",
+    "doctorId": "d2",
+    "date": "2026-01-13",
+    "type": "full",
+    "reason": "OFF DAY",
+    "__v": 0
+  },
+  {
+    "_id": "694e6016c5063a6e42c909cc",
+    "id": "LV-QBDDSAQL3",
+    "doctorId": "d2",
+    "date": "2026-01-15",
+    "type": "full",
+    "reason": "OFF DAY",
+    "__v": 0
+  },
+  {
+    "_id": "694e6020b93c2b9391c55c99",
+    "id": "LV-WXN5C6QN4",
+    "doctorId": "d2",
+    "date": "2026-01-16",
+    "type": "full",
+    "reason": "OFF DAY",
+    "__v": 0
+  },
+  {
+    "_id": "694e602ac5063a6e42c909d8",
+    "id": "LV-PS46XR1T0",
+    "doctorId": "d2",
+    "date": "2026-01-18",
+    "type": "full",
+    "reason": "OFF DAY",
+    "__v": 0
+  },
+  {
+    "_id": "694e6038b93c2b9391c55ca5",
+    "id": "LV-Y74SR5XCT",
+    "doctorId": "d2",
+    "date": "2026-01-20",
+    "type": "full",
+    "reason": "OFF DAY",
+    "__v": 0
+  },
+  {
+    "_id": "694e6041c5063a6e42c909e4",
+    "id": "LV-9O6N0A5V0",
+    "doctorId": "d2",
+    "date": "2026-01-22",
+    "type": "full",
+    "reason": "OFF DAY",
+    "__v": 0
+  },
+  {
+    "_id": "694e604ab93c2b9391c55cb1",
+    "id": "LV-9TXJFA8VI",
+    "doctorId": "d2",
+    "date": "2026-01-23",
+    "type": "full",
+    "reason": "OFF DAY",
+    "__v": 0
+  },
+  {
+    "_id": "694e6052c5063a6e42c909f0",
+    "id": "LV-FHBJDH1W5",
+    "doctorId": "d2",
+    "date": "2026-01-25",
+    "type": "full",
+    "reason": "OFF DAY",
+    "__v": 0
+  },
+  {
+    "_id": "694e605db93c2b9391c55cbe",
+    "id": "LV-K5RGPOCPK",
+    "doctorId": "d2",
+    "date": "2026-01-27",
+    "type": "full",
+    "reason": "OFF DAY",
+    "__v": 0
+  },
+  {
+    "_id": "694e6080c5063a6e42c90a07",
+    "id": "LV-OMSF448WV",
+    "doctorId": "d2",
+    "date": "2026-01-29",
+    "type": "full",
+    "reason": "OFF DAY",
+    "__v": 0
+  },
+  {
+    "_id": "694e6089c5063a6e42c90a12",
+    "id": "LV-B3T9IFK9N",
+    "doctorId": "d2",
+    "date": "2026-01-30",
+    "type": "full",
+    "reason": "OFF DAY",
+    "__v": 0
+  },
+  {
+    "_id": "694e609cb93c2b9391c55ccb",
+    "id": "LV-3CUB7LN1K",
+    "doctorId": "d6",
+    "date": "2026-01-01",
+    "type": "full",
+    "reason": "OFF DAY",
+    "__v": 0
+  },
+  {
+    "_id": "694e7310d621f8f85ad9b299",
+    "id": "LV-URQJU87O7",
+    "doctorId": "d5",
+    "date": "2026-01-01",
+    "type": "full",
+    "reason": "OFF DAY",
+    "__v": 0
+  },
+  {
+    "_id": "694e79f8e7cfd1a59ca8af9e",
+    "id": "LV-NAU0M5HAM",
+    "doctorId": "d3",
+    "date": "2026-01-01",
+    "type": "full",
+    "reason": "OFF DAY",
+    "__v": 0
+  },
+  {
+    "_id": "694e7a06e7cfd1a59ca8afc0",
+    "id": "LV-RC35FIAPL",
+    "doctorId": "d3",
+    "date": "2026-01-08",
+    "type": "full",
+    "reason": "OFF DAY",
+    "__v": 0
+  },
+  {
+    "_id": "694e7a12e7cfd1a59ca8afe1",
+    "id": "LV-C02PM6NHA",
+    "doctorId": "d3",
+    "date": "2026-01-15",
+    "type": "full",
+    "reason": "OFF DAY",
+    "__v": 0
+  },
+  {
+    "_id": "694e7a1ce7cfd1a59ca8b002",
+    "id": "LV-ZEDFO795U",
+    "doctorId": "d3",
+    "date": "2026-01-22",
+    "type": "full",
+    "reason": "OFF DAY",
+    "__v": 0
+  },
+  {
+    "_id": "694e7a24e7cfd1a59ca8b024",
+    "id": "LV-5KTYO3PZQ",
+    "doctorId": "d3",
+    "date": "2026-01-29",
+    "type": "full",
+    "reason": "OFF DAY",
+    "__v": 0
+  },
+  {
+    "_id": "694e7a2d407ac10cb38f1bec",
+    "id": "LV-0CL0AK57Z",
+    "doctorId": "d3",
+    "date": "2026-01-30",
+    "type": "full",
+    "reason": "OFF DAY",
+    "__v": 0
+  },
+  {
+    "_id": "694e7a36407ac10cb38f1c0d",
+    "id": "LV-3LHTSWY9X",
+    "doctorId": "d3",
+    "date": "2026-01-31",
+    "type": "full",
+    "reason": "OFF DAY",
+    "__v": 0
+  },
+  {
+    "_id": "694e885bae31067f26d0626a",
+    "id": "LV-7SK0ITELD",
+    "doctorId": "d6",
+    "date": "2026-01-02",
+    "type": "partial",
+    "startTime": "17:00",
+    "endTime": "18:00",
+    "reason": "BREAK HOUR",
+    "__v": 0
+  },
+  {
+    "_id": "694e8877ae31067f26d066e6",
+    "id": "LV-GW7H6BBOL",
+    "doctorId": "d6",
+    "date": "2026-01-03",
+    "type": "partial",
+    "startTime": "17:00",
+    "endTime": "18:00",
+    "reason": "BREAK HOUR",
+    "__v": 0
+  },
+  {
+    "_id": "694e889059f2326f8b7e94b9",
+    "id": "LV-WH81USW0O",
+    "doctorId": "d6",
+    "date": "2026-01-04",
+    "type": "partial",
+    "startTime": "17:00",
+    "endTime": "18:00",
+    "reason": "BREAK HOUR",
+    "__v": 0
+  },
+  {
+    "_id": "694e88a859f2326f8b7e9935",
+    "id": "LV-5V5HALER4",
+    "doctorId": "d6",
+    "date": "2026-01-05",
+    "type": "partial",
+    "startTime": "17:00",
+    "endTime": "18:00",
+    "reason": "BREAK HOUR",
+    "__v": 0
+  },
+  {
+    "_id": "694e88beae31067f26d06b64",
+    "id": "LV-6IVP7CX57",
+    "doctorId": "d6",
+    "date": "2026-01-06",
+    "type": "partial",
+    "startTime": "17:00",
+    "endTime": "18:00",
+    "reason": "BREAK HOUR",
+    "__v": 0
+  },
+  {
+    "_id": "694e88d459f2326f8b7e9db2",
+    "id": "LV-8DG2L5F7C",
+    "doctorId": "d6",
+    "date": "2026-01-07",
+    "type": "partial",
+    "startTime": "17:00",
+    "endTime": "18:00",
+    "reason": "BREAK HOUR",
+    "__v": 0
+  },
+  {
+    "_id": "694e88ee59f2326f8b7ea22a",
+    "id": "LV-MG5AEW2SX",
+    "doctorId": "d6",
+    "date": "2026-01-08",
+    "type": "partial",
+    "startTime": "17:00",
+    "endTime": "18:00",
+    "reason": "BREAK HOUR",
+    "__v": 0
+  },
+  {
+    "_id": "694e894759f2326f8b7ea69e",
+    "id": "LV-Z167EI3S3",
+    "doctorId": "d6",
+    "date": "2026-01-09",
+    "type": "full",
+    "reason": "OFF DAY",
+    "__v": 0
+  },
+  {
+    "_id": "694e895a59f2326f8b7eab12",
+    "id": "LV-O1Q9HG78D",
+    "doctorId": "d6",
+    "date": "2026-01-10",
+    "type": "partial",
+    "startTime": "17:00",
+    "endTime": "18:00",
+    "reason": "BREAK HOUR",
+    "__v": 0
+  },
+  {
+    "_id": "694e896fae31067f26d06fe4",
+    "id": "LV-YQGSXPVNV",
+    "doctorId": "d6",
+    "date": "2026-01-11",
+    "type": "partial",
+    "startTime": "17:00",
+    "endTime": "18:00",
+    "reason": "BREAK HOUR",
+    "__v": 0
+  },
+  {
+    "_id": "694e898059f2326f8b7eaf87",
+    "id": "LV-RRAW1OM94",
+    "doctorId": "d6",
+    "date": "2026-01-12",
+    "type": "partial",
+    "startTime": "17:00",
+    "endTime": "18:00",
+    "reason": "BREAK HOUR",
+    "__v": 0
+  },
+  {
+    "_id": "694e899359f2326f8b7eb3f3",
+    "id": "LV-IXTS94BLC",
+    "doctorId": "d6",
+    "date": "2026-01-13",
+    "type": "partial",
+    "startTime": "17:00",
+    "endTime": "18:00",
+    "reason": "BREAK HOUR",
+    "__v": 0
+  },
+  {
+    "_id": "694e89a9ae31067f26d07456",
+    "id": "LV-U102ZT8U9",
+    "doctorId": "d6",
+    "date": "2026-01-14",
+    "type": "partial",
+    "startTime": "17:00",
+    "endTime": "18:00",
+    "reason": "BREAK HOUR",
+    "__v": 0
+  },
+  {
+    "_id": "694e89baae31067f26d078ba",
+    "id": "LV-JTCBZQ5MA",
+    "doctorId": "d6",
+    "date": "2026-01-15",
+    "type": "partial",
+    "startTime": "17:00",
+    "endTime": "18:00",
+    "reason": "BREAK HOUR",
+    "__v": 0
+  },
+  {
+    "_id": "694e89d359f2326f8b7eb85d",
+    "id": "LV-0C6ZTNNTW",
+    "doctorId": "d6",
+    "date": "2026-01-16",
+    "type": "full",
+    "reason": "OFF DAY",
+    "__v": 0
+  },
+  {
+    "_id": "694e89edae31067f26d07d1b",
+    "id": "LV-C4WON8E7L",
+    "doctorId": "d6",
+    "date": "2026-01-17",
+    "type": "partial",
+    "startTime": "17:00",
+    "endTime": "18:00",
+    "reason": "BREAK HOUR",
+    "__v": 0
+  },
+  {
+    "_id": "694e8a2159f2326f8b7ebcba",
+    "id": "LV-017UDCPQR",
+    "doctorId": "d6",
+    "date": "2026-01-18",
+    "type": "partial",
+    "startTime": "17:00",
+    "endTime": "18:00",
+    "reason": "BREAK HOUR",
+    "__v": 0
+  },
+  {
+    "_id": "694e8a3459f2326f8b7ec112",
+    "id": "LV-LAMA925Z7",
+    "doctorId": "d6",
+    "date": "2026-01-19",
+    "type": "partial",
+    "startTime": "17:00",
+    "endTime": "18:00",
+    "reason": "BREAK HOUR",
+    "__v": 0
+  },
+  {
+    "_id": "694e8a49ae31067f26d08179",
+    "id": "LV-P491S6X54",
+    "doctorId": "d6",
+    "date": "2026-01-20",
+    "type": "partial",
+    "startTime": "17:00",
+    "endTime": "18:00",
+    "reason": "BREAK HOUR",
+    "__v": 0
+  },
+  {
+    "_id": "694e8a5aae31067f26d085c9",
+    "id": "LV-WVV1QKLA1",
+    "doctorId": "d6",
+    "date": "2026-01-21",
+    "type": "partial",
+    "startTime": "17:00",
+    "endTime": "18:00",
+    "reason": "BREAK HOUR",
+    "__v": 0
+  },
+  {
+    "_id": "694e8a6c59f2326f8b7ec568",
+    "id": "LV-OBMCWGDVP",
+    "doctorId": "d6",
+    "date": "2026-01-22",
+    "type": "partial",
+    "startTime": "17:00",
+    "endTime": "18:00",
+    "reason": "BREAK HOUR",
+    "__v": 0
+  },
+  {
+    "_id": "694e8a7b59f2326f8b7ec9b0",
+    "id": "LV-UA873NUHF",
+    "doctorId": "d6",
+    "date": "2026-01-23",
+    "type": "full",
+    "reason": "OFF DAY",
+    "__v": 0
+  },
+  {
+    "_id": "694e8a92ae31067f26d08a17",
+    "id": "LV-L197H92LZ",
+    "doctorId": "d6",
+    "date": "2026-01-24",
+    "type": "partial",
+    "startTime": "17:00",
+    "endTime": "18:00",
+    "reason": "BREAK HOUR",
+    "__v": 0
+  },
+  {
+    "_id": "694e8aa4ae31067f26d08e5b",
+    "id": "LV-1ILMHFS3S",
+    "doctorId": "d6",
+    "date": "2026-01-25",
+    "type": "partial",
+    "startTime": "17:00",
+    "endTime": "18:00",
+    "reason": "BREAK HOUR",
+    "__v": 0
+  },
+  {
+    "_id": "694e8ab559f2326f8b7ecdf6",
+    "id": "LV-64F9N9ZVG",
+    "doctorId": "d6",
+    "date": "2026-01-26",
+    "type": "partial",
+    "startTime": "17:00",
+    "endTime": "18:00",
+    "reason": "BREAK HOUR",
+    "__v": 0
+  },
+  {
+    "_id": "694e8ac9ae31067f26d0929c",
+    "id": "LV-6TGPMYRM9",
+    "doctorId": "d6",
+    "date": "2026-01-27",
+    "type": "partial",
+    "startTime": "17:00",
+    "endTime": "18:00",
+    "reason": "BREAK HOUR",
+    "__v": 0
+  },
+  {
+    "_id": "694e8ba9ae31067f26d096d5",
+    "id": "LV-OX4G367KF",
+    "doctorId": "d6",
+    "date": "2026-01-29",
+    "type": "partial",
+    "startTime": "17:00",
+    "endTime": "18:00",
+    "reason": "BREAK HOUR",
+    "__v": 0
+  },
+  {
+    "_id": "694e8beaae31067f26d09ae9",
+    "id": "LV-7NBBJS6WN",
+    "doctorId": "d6",
+    "date": "2026-01-30",
+    "type": "full",
+    "reason": "OFF DAY",
+    "__v": 0
+  },
+  {
+    "_id": "694e8c03ae31067f26d09ef9",
+    "id": "LV-NM6X5GY29",
+    "doctorId": "d6",
+    "date": "2026-01-31",
+    "type": "partial",
+    "startTime": "17:00",
+    "endTime": "18:00",
+    "reason": "BREAK HOUR",
+    "__v": 0
+  },
+  {
+    "_id": "694f33d3872835547e9d063d",
+    "id": "LV-3LTCD2QM4",
+    "doctorId": "d3",
+    "date": "2026-03-01",
+    "type": "partial",
+    "startTime": "19:30",
+    "endTime": "20:00",
+    "reason": "BREAK HOUR",
+    "__v": 0
+  },
+  {
+    "_id": "694f3401872835547e9d065e",
+    "id": "LV-CSRSA7LIE",
+    "doctorId": "d3",
+    "date": "2026-01-04",
+    "type": "partial",
+    "startTime": "19:30",
+    "endTime": "20:00",
+    "reason": "BREAK HOUR",
+    "__v": 0
+  },
+  {
+    "_id": "694f342ea5e2d1130146ca04",
+    "id": "LV-G2J9ZACGJ",
+    "doctorId": "d3",
+    "date": "2026-01-05",
+    "type": "partial",
+    "startTime": "19:30",
+    "endTime": "20:00",
+    "reason": "BREAK HOUR",
+    "__v": 0
+  },
+  {
+    "_id": "694f3457872835547e9d0680",
+    "id": "LV-VYWWNETST",
+    "doctorId": "d3",
+    "date": "2026-06-01",
+    "type": "partial",
+    "startTime": "19:30",
+    "endTime": "20:00",
+    "reason": "BREAK HOUR",
+    "__v": 0
+  },
+  {
+    "_id": "694f3478a5e2d1130146ca26",
+    "id": "LV-MY6NZ60KK",
+    "doctorId": "d3",
+    "date": "2026-01-07",
+    "type": "partial",
+    "startTime": "19:30",
+    "endTime": "20:00",
+    "reason": "BREAK HOUR",
+    "__v": 0
+  },
+  {
+    "_id": "694f34a13253b9144062c467",
+    "id": "LV-Z5YKMN63V",
+    "doctorId": "d3",
+    "date": "2026-01-12",
+    "type": "partial",
+    "startTime": "19:30",
+    "endTime": "20:00",
+    "reason": "BREAK HOUR",
+    "__v": 0
+  },
+  {
+    "_id": "694f34cca5e2d1130146ca48",
+    "id": "LV-ZKHCYAVSB",
+    "doctorId": "d3",
+    "date": "2026-01-13",
+    "type": "partial",
+    "startTime": "19:30",
+    "endTime": "20:00",
+    "reason": "BREAK HOUR",
+    "__v": 0
+  },
+  {
+    "_id": "694f34f13253b9144062c489",
+    "id": "LV-J62C3M5BX",
+    "doctorId": "d3",
+    "date": "2026-01-14",
+    "type": "partial",
+    "startTime": "19:30",
+    "endTime": "20:00",
+    "reason": "BREAK HOUR",
+    "__v": 0
+  },
+  {
+    "_id": "694f351d6193c87d5e19b0fc",
+    "id": "LV-VSPSUBM27",
+    "doctorId": "d3",
+    "date": "2026-01-19",
+    "type": "partial",
+    "startTime": "19:30",
+    "endTime": "20:00",
+    "reason": "BREAK HOUR",
+    "__v": 0
+  },
+  {
+    "_id": "694f35386193c87d5e19b11e",
+    "id": "LV-HQK8B3TJT",
+    "doctorId": "d3",
+    "date": "2026-01-20",
+    "type": "partial",
+    "startTime": "19:30",
+    "endTime": "20:00",
+    "reason": "BREAK HOUR",
+    "__v": 0
+  },
+  {
+    "_id": "694f355a3253b9144062c4ae",
+    "id": "LV-GKUEFHZIB",
+    "doctorId": "d3",
+    "date": "2026-01-21",
+    "type": "partial",
+    "startTime": "19:30",
+    "endTime": "20:00",
+    "reason": "BREAK HOUR",
+    "__v": 0
+  },
+  {
+    "_id": "694f35c03253b9144062c4cf",
+    "id": "LV-OM3DHQWG2",
+    "doctorId": "d3",
+    "date": "2026-01-26",
+    "type": "partial",
+    "startTime": "19:30",
+    "endTime": "20:00",
+    "reason": "BREAK HOUR",
+    "__v": 0
+  },
+  {
+    "_id": "694f35dd6193c87d5e19b141",
+    "id": "LV-JGF1U6P4K",
+    "doctorId": "d3",
+    "date": "2026-01-27",
+    "type": "partial",
+    "startTime": "19:30",
+    "endTime": "20:00",
+    "reason": "BREAK HOUR",
+    "__v": 0
+  },
+  {
+    "_id": "694f35f93253b9144062c4f1",
+    "id": "LV-DB1WJQWSA",
+    "doctorId": "d3",
+    "date": "2026-01-28",
+    "type": "partial",
+    "startTime": "19:30",
+    "endTime": "20:00",
+    "reason": "BREAK HOUR",
+    "__v": 0
+  },
+  {
+    "_id": "6953502dfd77414ad947580d",
+    "id": "LV-B0UQNEDSR",
+    "doctorId": "d3",
+    "date": "2026-01-15",
+    "type": "full",
+    "reason": "",
+    "__v": 0
+  },
+  {
+    "_id": "69535033fd77414ad9475e16",
+    "id": "LV-WUH9R2XJQ",
+    "doctorId": "d3",
+    "date": "2026-01-15",
+    "type": "full",
+    "reason": "",
+    "__v": 0
+  },
+  {
+    "_id": "6953dda6b5e599f3f8deb20a",
+    "id": "LV-328PTJJCP",
+    "doctorId": "d3",
+    "date": "2026-01-15",
+    "type": "full",
+    "reason": "",
+    "__v": 0
+  },
+  {
+    "_id": "6953ddaab5e599f3f8deb796",
+    "id": "LV-4RICFRV3Y",
+    "doctorId": "d3",
+    "date": "2026-01-15",
+    "type": "full",
+    "reason": "",
+    "__v": 0
+  },
+  {
+    "_id": "6954d17ea96c65b5ad5bdac7",
+    "id": "LV-RTFRQT3FU",
+    "doctorId": "d6",
+    "date": "2026-01-28",
+    "type": "partial",
+    "startTime": "17:00",
+    "endTime": "18:00",
+    "reason": "",
+    "__v": 0
+  },
+  {
+    "_id": "6954d183a96c65b5ad5bddd8",
+    "id": "LV-8LDJPXX37",
+    "doctorId": "d6",
+    "date": "2026-01-28",
+    "type": "partial",
+    "startTime": "17:00",
+    "endTime": "18:00",
+    "reason": "",
+    "__v": 0
+  },
+  {
+    "_id": "6965a5132f78dc0c5f2779fe",
+    "id": "LV-05O97RZX7",
+    "doctorId": "d3",
+    "date": "2026-02-05",
+    "type": "full",
+    "reason": "ON LEAVE",
+    "__v": 0
+  },
+  {
+    "_id": "6965a5642ae3cce60207281e",
+    "id": "LV-WY69N1CHO",
+    "doctorId": "d3",
+    "date": "2026-02-12",
+    "type": "full",
+    "reason": "ON LEAVE",
+    "__v": 0
+  },
+  {
+    "_id": "6965a5762ae3cce602072b3e",
+    "id": "LV-CW3B6XQDC",
+    "doctorId": "d3",
+    "date": "2026-02-19",
+    "type": "full",
+    "reason": "ON LEAVE",
+    "__v": 0
+  },
+  {
+    "_id": "6965a5b32f78dc0c5f277d49",
+    "id": "LV-M41K8VW6H",
+    "doctorId": "d3",
+    "date": "2026-02-20",
+    "type": "full",
+    "reason": "ON LEAVE",
+    "__v": 0
+  },
+  {
+    "_id": "6965a5c42ae3cce602072cd0",
+    "id": "LV-FYWX923ME",
+    "doctorId": "d3",
+    "date": "2026-02-21",
+    "type": "full",
+    "reason": "ON LEAVE",
+    "__v": 0
+  },
+  {
+    "_id": "6965a5d72f78dc0c5f277edf",
+    "id": "LV-63XJZW1RV",
+    "doctorId": "d3",
+    "date": "2026-02-22",
+    "type": "full",
+    "reason": "ON LEAVE",
+    "__v": 0
+  },
+  {
+    "_id": "6965a5e52ae3cce602072e61",
+    "id": "LV-B3LJ6B0TJ",
+    "doctorId": "d3",
+    "date": "2026-02-26",
+    "type": "full",
+    "reason": "ON LEAVE",
+    "__v": 0
+  },
+  {
+    "_id": "6965af6b0513fc13183b263f",
+    "id": "LV-M4D4WF506",
+    "doctorId": "d6",
+    "date": "2026-02-05",
+    "type": "full",
+    "reason": "ON LEAVE",
+    "__v": 0
+  },
+  {
+    "_id": "6965af79de4b8c19df83a2e6",
+    "id": "LV-5VBX2PNI0",
+    "doctorId": "d6",
+    "date": "2026-02-12",
+    "type": "full",
+    "reason": "ON LEAVE",
+    "__v": 0
+  },
+  {
+    "_id": "6965af880513fc13183b279e",
+    "id": "LV-MQ9BHLCZ1",
+    "doctorId": "d6",
+    "date": "2026-02-19",
+    "type": "full",
+    "reason": "ON LEAVE",
+    "__v": 0
+  },
+  {
+    "_id": "696734c55bc2b3e1667f342e",
+    "id": "LV-DM1NIBJBP",
+    "doctorId": "d3",
+    "date": "2026-02-23",
+    "type": "full",
+    "reason": "ON LEAVE",
+    "__v": 0
+  },
+  {
+    "_id": "6968410837a7eb515ff3ce52",
+    "id": "LV-80BX3RFPK",
+    "doctorId": "d1",
+    "date": "2026-02-01",
+    "type": "full",
+    "reason": "OFF DAY",
+    "__v": 0
+  },
+  {
+    "_id": "69684123f232a2e66d362b9f",
+    "id": "LV-E7X0E22QT",
+    "doctorId": "d1",
+    "date": "2026-02-02",
+    "type": "full",
+    "reason": "OFF DAY",
+    "__v": 0
+  },
+  {
+    "_id": "6968413df232a2e66d362e43",
+    "id": "LV-CTS19E4WQ",
+    "doctorId": "d1",
+    "date": "2026-02-07",
+    "type": "full",
+    "reason": "OFF DAY",
+    "__v": 0
+  },
+  {
+    "_id": "6968415dd8af6446f289df1a",
+    "id": "LV-LC1LKOM4C",
+    "doctorId": "d1",
+    "date": "2026-02-14",
+    "type": "full",
+    "reason": "OFF DAY",
+    "__v": 0
+  },
+  {
+    "_id": "6968418c0b5cdc52c7e24a64",
+    "id": "LV-GORZ8LNBN",
+    "doctorId": "d1",
+    "date": "2026-02-18",
+    "type": "full",
+    "reason": "OFF DAY",
+    "__v": 0
+  },
+  {
+    "_id": "696841ae37a7eb515ff3d115",
+    "id": "LV-ZFGWFCYKC",
+    "doctorId": "d1",
+    "date": "2026-02-21",
+    "type": "full",
+    "reason": "OFF DAY",
+    "__v": 0
+  },
+  {
+    "_id": "696841b279ea2550bf9b810b",
+    "id": "LV-TSINQ8TRW",
+    "doctorId": "d1",
+    "date": "2026-02-21",
+    "type": "full",
+    "reason": "OFF DAY",
+    "__v": 0
+  },
+  {
+    "_id": "696841cfd8af6446f289e1d5",
+    "id": "LV-Z3QRUDZR5",
+    "doctorId": "d1",
+    "date": "2026-02-28",
+    "type": "full",
+    "reason": "OFF DAY",
+    "__v": 0
+  },
+  {
+    "_id": "69686c9c76e681fa610a5eb9",
+    "id": "LV-D8L0EJHAS",
+    "doctorId": "nt64rh3wz",
+    "date": "2026-02-01",
+    "type": "full",
+    "reason": "OFF DAY",
+    "__v": 0
+  },
+  {
+    "_id": "6969e3616e147cb886e3b1df",
+    "id": "LV-GNIS3BW0F",
+    "doctorId": "d4",
+    "date": "2026-02-01",
+    "type": "full",
+    "reason": "OFF DAY",
+    "__v": 0
+  },
+  {
+    "_id": "6969e3716e147cb886e3b231",
+    "id": "LV-17760P9Z8",
+    "doctorId": "d4",
+    "date": "2026-02-02",
+    "type": "full",
+    "reason": "OFF",
+    "__v": 0
+  },
+  {
+    "_id": "6969e3926e147cb886e3b283",
+    "id": "LV-U36OJ8EVG",
+    "doctorId": "d4",
+    "date": "2026-02-04",
+    "type": "full",
+    "reason": "OFF",
+    "__v": 0
+  },
+  {
+    "_id": "6969e3a56e147cb886e3b2d5",
+    "id": "LV-MGD2TOU4B",
+    "doctorId": "d4",
+    "date": "2026-02-05",
+    "type": "full",
+    "reason": "OFF",
+    "__v": 0
+  },
+  {
+    "_id": "6969e3c370dc6111e59fb7aa",
+    "id": "LV-45B03IGZR",
+    "doctorId": "d4",
+    "date": "2026-02-06",
+    "type": "full",
+    "reason": "OFF",
+    "__v": 0
+  },
+  {
+    "_id": "6969e3fc70dc6111e59fb802",
+    "id": "LV-2O1VUCL6R",
+    "doctorId": "d4",
+    "date": "2026-02-09",
+    "type": "full",
+    "reason": "OFF",
+    "__v": 0
+  },
+  {
+    "_id": "6969e4152e12ea5ed7b655bc",
+    "id": "LV-7VFHJE2YG",
+    "doctorId": "d4",
+    "date": "2026-02-10",
+    "type": "full",
+    "reason": "OFF",
+    "__v": 0
+  },
+  {
+    "_id": "6969e42770dc6111e59fb856",
+    "id": "LV-4MLRXXBBR",
+    "doctorId": "d4",
+    "date": "2026-02-11",
+    "type": "full",
+    "reason": "OFF",
+    "__v": 0
+  },
+  {
+    "_id": "6969e4572e12ea5ed7b6560f",
+    "id": "LV-FU414VDN0",
+    "doctorId": "d4",
+    "date": "2026-02-13",
+    "type": "full",
+    "reason": "OFF",
+    "__v": 0
+  },
+  {
+    "_id": "6969e47870dc6111e59fb8a9",
+    "id": "LV-832G7F1Q1",
+    "doctorId": "d4",
+    "date": "2026-02-16",
+    "type": "full",
+    "reason": "OFF",
+    "__v": 0
+  },
+  {
+    "_id": "6969e4a22e12ea5ed7b65663",
+    "id": "LV-RH55001F7",
+    "doctorId": "d4",
+    "date": "2026-02-18",
+    "type": "full",
+    "reason": "OFF",
+    "__v": 0
+  },
+  {
+    "_id": "6969e4af2e12ea5ed7b656b5",
+    "id": "LV-A8ZEN5JTB",
+    "doctorId": "d4",
+    "date": "2026-02-19",
+    "type": "full",
+    "reason": "OFF",
+    "__v": 0
+  },
+  {
+    "_id": "6969e4be70dc6111e59fb8fe",
+    "id": "LV-BUIJUQCHU",
+    "doctorId": "d4",
+    "date": "2026-02-20",
+    "type": "full",
+    "reason": "OFF",
+    "__v": 0
+  },
+  {
+    "_id": "6969e4d070dc6111e59fb953",
+    "id": "LV-6ZQD0725W",
+    "doctorId": "d4",
+    "date": "2026-02-23",
+    "type": "full",
+    "reason": "OFF",
+    "__v": 0
+  },
+  {
+    "_id": "6969e4e470dc6111e59fb9a7",
+    "id": "LV-OXHOV607M",
+    "doctorId": "d4",
+    "date": "2026-02-25",
+    "type": "full",
+    "reason": "OFF",
+    "__v": 0
+  },
+  {
+    "_id": "6969e4f170dc6111e59fb9fa",
+    "id": "LV-S0WT2YFFX",
+    "doctorId": "d4",
+    "date": "2026-02-26",
+    "type": "full",
+    "reason": "OFF",
+    "__v": 0
+  },
+  {
+    "_id": "6969e4ff70dc6111e59fba4c",
+    "id": "LV-9EY5FTBY2",
+    "doctorId": "d4",
+    "date": "2026-02-27",
+    "type": "full",
+    "reason": "OFF",
+    "__v": 0
+  },
+  {
+    "_id": "6969efbdb2f340c8acbf0169",
+    "id": "LV-61VQCCHFT",
+    "doctorId": "d6",
+    "date": "2026-02-01",
+    "type": "full",
+    "reason": "OFF",
+    "__v": 0
+  },
+  {
+    "_id": "6969f00991679947d1c11fa7",
+    "id": "LV-4CLEYIZAN",
+    "doctorId": "d6",
+    "date": "2026-02-26",
+    "type": "full",
+    "reason": "OFF",
+    "__v": 0
+  },
+  {
+    "_id": "6969f68f05dfdabfaf55c900",
+    "id": "LV-RFMI5MO0B",
+    "doctorId": "nt64rh3wz",
+    "date": "2026-02-09",
+    "type": "full",
+    "reason": "OFF",
+    "__v": 0
+  },
+  {
+    "_id": "6969f6b205dfdabfaf55cd73",
+    "id": "LV-ED71EZRWT",
+    "doctorId": "nt64rh3wz",
+    "date": "2026-02-16",
+    "type": "full",
+    "reason": "OFF",
+    "__v": 0
+  },
+  {
+    "_id": "6969f6ca05dfdabfaf55d1dd",
+    "id": "LV-MCD929SYK",
+    "doctorId": "nt64rh3wz",
+    "date": "2026-02-23",
+    "type": "full",
+    "reason": "OFF",
+    "__v": 0
+  },
+  {
+    "_id": "6981dc12de38abe42f82642b",
+    "id": "LV-29ST1URP7",
+    "doctorId": "d6",
+    "date": "2026-03-03",
+    "type": "full",
+    "reason": "OFF DAY",
+    "__v": 0
+  },
+  {
+    "_id": "6981dc2b2684dbd83171a38e",
+    "id": "LV-Q2AEZ3LT7",
+    "doctorId": "d6",
+    "date": "2026-03-04",
+    "type": "full",
+    "reason": "OFF DAY",
+    "__v": 0
+  },
+  {
+    "_id": "6981dc5b2684dbd83171a594",
+    "id": "LV-M53JN5O3Y",
+    "doctorId": "d6",
+    "date": "2026-03-05",
+    "type": "full",
+    "reason": "OFF DAY",
+    "__v": 0
+  },
+  {
+    "_id": "6981dd6b1d1e7bb67e0b1206",
+    "id": "LV-N3IW2APDV",
+    "doctorId": "d6",
+    "date": "2026-03-12",
+    "type": "full",
+    "reason": "OFF DAY",
+    "__v": 0
+  },
+  {
+    "_id": "6981de60be8e185e8d5405b8",
+    "id": "LV-CON1EE1K6",
+    "doctorId": "d6",
+    "date": "2026-03-19",
+    "type": "full",
+    "reason": "OFF DAY",
+    "__v": 0
+  },
+  {
+    "_id": "6981df4d5a3a231eeeb51c03",
+    "id": "LV-Y89XDSE93",
+    "doctorId": "d6",
+    "date": "2026-03-26",
+    "type": "full",
+    "reason": "OFF DAY",
+    "__v": 0
+  },
+  {
+    "_id": "698559269e639d58c8ad861b",
+    "id": "LV-GJWRE6F8Y",
+    "doctorId": "d3",
+    "date": "2026-03-05",
+    "type": "full",
+    "reason": "OFF DAY",
+    "__v": 0
+  },
+  {
+    "_id": "698559439e639d58c8ad874f",
+    "id": "LV-MHFGKYW8U",
+    "doctorId": "d3",
+    "date": "2026-03-07",
+    "type": "full",
+    "reason": "OFF DAY",
+    "__v": 0
+  },
+  {
+    "_id": "6985597f916620ca3ee7b819",
+    "id": "LV-4H6FRBNHV",
+    "doctorId": "d3",
+    "date": "2026-03-12",
+    "type": "full",
+    "reason": "FULL DAY",
+    "__v": 0
+  },
+  {
+    "_id": "69855997916620ca3ee7b94a",
+    "id": "LV-CCQMCXJ7F",
+    "doctorId": "d3",
+    "date": "2026-03-19",
+    "type": "full",
+    "reason": "OFF DAY",
+    "__v": 0
+  },
+  {
+    "_id": "698559b3e08f61509e933712",
+    "id": "LV-Q2S09Y7B5",
+    "doctorId": "d3",
+    "date": "2026-03-26",
+    "type": "full",
+    "reason": "OFF DAY",
+    "__v": 0
+  },
+  {
+    "_id": "698559c4916620ca3ee7ba7c",
+    "id": "LV-G3SIQ4D94",
+    "doctorId": "d3",
+    "date": "2026-03-27",
+    "type": "full",
+    "reason": "OFF DAY",
+    "__v": 0
+  },
+  {
+    "_id": "698559dce08f61509e933843",
+    "id": "LV-0EKH39CW1",
+    "doctorId": "d3",
+    "date": "2026-03-28",
+    "type": "full",
+    "reason": "OFF DAY",
+    "__v": 0
+  },
+  {
+    "_id": "698559f5e08f61509e933971",
+    "id": "LV-CD9SURSZQ",
+    "doctorId": "d3",
+    "date": "2026-03-29",
+    "type": "full",
+    "reason": "OFF DAY",
+    "__v": 0
+  },
+  {
+    "_id": "69856e2aec05d02aaeb811fb",
+    "id": "LV-EI0QGR66S",
+    "doctorId": "d1",
+    "date": "2026-03-20",
+    "type": "full",
+    "reason": "OFF DAY",
+    "__v": 0
+  },
+  {
+    "_id": "69856e41ec05d02aaeb8138a",
+    "id": "LV-I07BY9L4J",
+    "doctorId": "d1",
+    "date": "2026-03-21",
+    "type": "full",
+    "reason": "OFF DAY",
+    "__v": 0
+  },
+  {
+    "_id": "69856e55d9dbe52a19b1f940",
+    "id": "LV-8JYHQLIWK",
+    "doctorId": "d1",
+    "date": "2026-03-28",
+    "type": "full",
+    "reason": "OFF DAY",
+    "__v": 0
+  },
+  {
+    "_id": "698aa3b9f6a80fd86a44046b",
+    "id": "LV-7CT9FV74V",
+    "doctorId": "d2",
+    "date": "2026-03-03",
+    "type": "full",
+    "reason": "OFF DAY",
+    "__v": 0
+  },
+  {
+    "_id": "698aa40986f6ccc4bb317e94",
+    "id": "LV-LJ6MDESLO",
+    "doctorId": "d2",
+    "date": "2026-03-05",
+    "type": "full",
+    "reason": "OFF DAY",
+    "__v": 0
+  },
+  {
+    "_id": "698aa41f86f6ccc4bb317ecf",
+    "id": "LV-71Z8GMZEF",
+    "doctorId": "d2",
+    "date": "2026-03-06",
+    "type": "full",
+    "reason": "OFF DAY",
+    "__v": 0
+  },
+  {
+    "_id": "698aa431f6a80fd86a4404a8",
+    "id": "LV-D11V5C63J",
+    "doctorId": "d2",
+    "date": "2026-03-08",
+    "type": "full",
+    "reason": "OFF DAY",
+    "__v": 0
+  },
+  {
+    "_id": "698aa44186f6ccc4bb317f0c",
+    "id": "LV-T2KECP40D",
+    "doctorId": "d2",
+    "date": "2026-03-10",
+    "type": "full",
+    "reason": "OFF DAY",
+    "__v": 0
+  },
+  {
+    "_id": "698aa46086f6ccc4bb317f48",
+    "id": "LV-PHWT44NGZ",
+    "doctorId": "d2",
+    "date": "2026-03-12",
+    "type": "full",
+    "reason": "OFF DAY",
+    "__v": 0
+  },
+  {
+    "_id": "698aa46df6a80fd86a4404e6",
+    "id": "LV-1K72QLSYC",
+    "doctorId": "d2",
+    "date": "2026-03-13",
+    "type": "full",
+    "reason": "OFF DAY",
+    "__v": 0
+  },
+  {
+    "_id": "698aa47e86f6ccc4bb317f88",
+    "id": "LV-UM9ZV0FWF",
+    "doctorId": "d2",
+    "date": "2026-03-15",
+    "type": "full",
+    "reason": "OFF DAY",
+    "__v": 0
+  },
+  {
+    "_id": "698aa48e86f6ccc4bb317fc4",
+    "id": "LV-74ICLVPHK",
+    "doctorId": "d2",
+    "date": "2026-03-17",
+    "type": "full",
+    "reason": "OFF DAY",
+    "__v": 0
+  },
+  {
+    "_id": "698aa531d64fa9a78d113db8",
+    "id": "LV-3XZCMPYWH",
+    "doctorId": "d2",
+    "date": "2026-03-19",
+    "type": "full",
+    "reason": "OFF DAY",
+    "__v": 0
+  },
+  {
+    "_id": "698aa53fd64fa9a78d113df8",
+    "id": "LV-TFEUN8GCT",
+    "doctorId": "d2",
+    "date": "2026-03-20",
+    "type": "full",
+    "reason": "OFF DAY ",
+    "__v": 0
+  },
+  {
+    "_id": "698aa554f6a80fd86a440528",
+    "id": "LV-3I08BUSI5",
+    "doctorId": "d2",
+    "date": "2026-03-22",
+    "type": "full",
+    "reason": "OFF DAY",
+    "__v": 0
+  },
+  {
+    "_id": "698aa562d64fa9a78d113e43",
+    "id": "LV-CRGR1KWT0",
+    "doctorId": "d2",
+    "date": "2026-03-24",
+    "type": "full",
+    "reason": "OFF DAY",
+    "__v": 0
+  },
+  {
+    "_id": "698aa573f6a80fd86a440564",
+    "id": "LV-5Y9UICUGC",
+    "doctorId": "d2",
+    "date": "2026-03-26",
+    "type": "full",
+    "reason": "OFF DAY",
+    "__v": 0
+  },
+  {
+    "_id": "698aa58eab0d5c071614c2fb",
+    "id": "LV-GOPMOK7T0",
+    "doctorId": "d2",
+    "date": "2026-03-27",
+    "type": "full",
+    "reason": "OFF DAY",
+    "__v": 0
+  },
+  {
+    "_id": "698aa5a3f6a80fd86a4405a1",
+    "id": "LV-DW6104KK0",
+    "doctorId": "d2",
+    "date": "2026-03-29",
+    "type": "full",
+    "reason": "OFF DAY",
+    "__v": 0
+  },
+  {
+    "_id": "698aa5b1f6a80fd86a4405dc",
+    "id": "LV-X9U8CD63C",
+    "doctorId": "d2",
+    "date": "2026-03-30",
+    "type": "full",
+    "reason": "OFF DAY",
+    "__v": 0
+  },
+  {
+    "_id": "698aa5bdf6a80fd86a440617",
+    "id": "LV-HMWFD0KXS",
+    "doctorId": "d2",
+    "date": "2026-03-31",
+    "type": "full",
+    "reason": "OFF DAY",
+    "__v": 0
+  },
+  {
+    "_id": "698aa86c09675fa621c6ea57",
+    "id": "LV-ZTLNJMOZU",
+    "doctorId": "d5",
+    "date": "2026-03-03",
+    "type": "full",
+    "reason": "OFF DAY",
+    "__v": 0
+  },
+  {
+    "_id": "698af1c0123d18fa05429c32",
+    "id": "LV-37KNU4ZYM",
+    "doctorId": "d4",
+    "date": "2026-03-02",
+    "type": "full",
+    "reason": "OFF DAY",
+    "__v": 0
+  },
+  {
+    "_id": "698af1d31c2dfb80b4f16d86",
+    "id": "LV-NMOEM0XM1",
+    "doctorId": "d4",
+    "date": "2026-03-04",
+    "type": "full",
+    "reason": "OFF DAY",
+    "__v": 0
+  },
+  {
+    "_id": "698af1df123d18fa05429c57",
+    "id": "LV-MU4JT6L7V",
+    "doctorId": "d4",
+    "date": "2026-03-05",
+    "type": "full",
+    "reason": "OFF DAY",
+    "__v": 0
+  },
+  {
+    "_id": "698af1ec123d18fa05429c7b",
+    "id": "LV-4OT9UFNK5",
+    "doctorId": "d4",
+    "date": "2026-03-06",
+    "type": "full",
+    "reason": "OFF DAY",
+    "__v": 0
+  },
+  {
+    "_id": "698af1fe123d18fa05429c9f",
+    "id": "LV-OD48YZEXC",
+    "doctorId": "d4",
+    "date": "2026-03-11",
+    "type": "full",
+    "reason": "OFF DAY",
+    "__v": 0
+  },
+  {
+    "_id": "698af2101c2dfb80b4f16dad",
+    "id": "LV-JU49V8AA5",
+    "doctorId": "d4",
+    "date": "2026-03-12",
+    "type": "full",
+    "reason": "OFF DAY",
+    "__v": 0
+  },
+  {
+    "_id": "698af224123d18fa05429cc4",
+    "id": "LV-7N9DA1WZ5",
+    "doctorId": "d4",
+    "date": "2026-03-13",
+    "type": "full",
+    "reason": "OFF DAY",
+    "__v": 0
+  },
+  {
+    "_id": "698af23b1c2dfb80b4f16dd2",
+    "id": "LV-N621KPA76",
+    "doctorId": "d4",
+    "date": "2026-03-16",
+    "type": "full",
+    "reason": "OFF DAY",
+    "__v": 0
+  },
+  {
+    "_id": "698af2521c2dfb80b4f16df8",
+    "id": "LV-0J28JCIG8",
+    "doctorId": "d4",
+    "date": "2026-03-18",
+    "type": "full",
+    "reason": "OFF DAY",
+    "__v": 0
+  },
+  {
+    "_id": "698af26f1c2dfb80b4f16e1d",
+    "id": "LV-VHNA9RQ17",
+    "doctorId": "d4",
+    "date": "2026-03-19",
+    "type": "full",
+    "reason": "OFF DAY",
+    "__v": 0
+  },
+  {
+    "_id": "698af2a21c2dfb80b4f16e44",
+    "id": "LV-BGCAAQ6FQ",
+    "doctorId": "d4",
+    "date": "2026-03-22",
+    "type": "full",
+    "reason": "OFF DAY",
+    "__v": 0
+  },
+  {
+    "_id": "698af2c41c2dfb80b4f16e69",
+    "id": "LV-OTO5XBZ1X",
+    "doctorId": "d4",
+    "date": "2026-03-23",
+    "type": "full",
+    "reason": "OFF DAY",
+    "__v": 0
+  },
+  {
+    "_id": "698af2df123d18fa05429cf0",
+    "id": "LV-G3K75BK4R",
+    "doctorId": "d4",
+    "date": "2026-03-25",
+    "type": "full",
+    "reason": "OFF DAY",
+    "__v": 0
+  },
+  {
+    "_id": "698af2ed1c2dfb80b4f16e90",
+    "id": "LV-Y1F3H8N9R",
+    "doctorId": "d4",
+    "date": "2026-03-26",
+    "type": "full",
+    "reason": "OFF DAY",
+    "__v": 0
+  },
+  {
+    "_id": "698af303123d18fa05429d18",
+    "id": "LV-TWHELFJ48",
+    "doctorId": "d4",
+    "date": "2026-03-30",
+    "type": "full",
+    "reason": "OFF DAY",
+    "__v": 0
+  },
+  {
+    "_id": "698afab5174e9cd471a598a8",
+    "id": "LV-AAT1WJWF8",
+    "doctorId": "nt64rh3wz",
+    "date": "2026-03-02",
+    "type": "full",
+    "reason": "OFF DAY",
+    "__v": 0
+  },
+  {
+    "_id": "698afacbc9850b4305766f3e",
+    "id": "LV-F1Q1PCPT4",
+    "doctorId": "nt64rh3wz",
+    "date": "2026-03-09",
+    "type": "full",
+    "reason": "OFF DAY",
+    "__v": 0
+  },
+  {
+    "_id": "698afafa174e9cd471a599af",
+    "id": "LV-A2R9T2IBR",
+    "doctorId": "nt64rh3wz",
+    "date": "2026-03-16",
+    "type": "full",
+    "reason": "OFF DAY",
+    "__v": 0
+  },
+  {
+    "_id": "698afb1bc9850b4305767067",
+    "id": "LV-4236KCJVL",
+    "doctorId": "nt64rh3wz",
+    "date": "2026-03-22",
+    "type": "full",
+    "reason": "OFF DAY",
+    "__v": 0
+  },
+  {
+    "_id": "698afb42c9850b430576716c",
+    "id": "LV-89YARHODR",
+    "doctorId": "nt64rh3wz",
+    "date": "2026-03-30",
+    "type": "full",
+    "reason": "OFF DAY",
+    "__v": 0
+  },
+  {
+    "_id": "698c38a1fd174b75f7dd9eb0",
+    "id": "LV-1MVQR77JV",
+    "doctorId": "nt64rh3wz",
+    "date": "2026-03-21",
+    "type": "full",
+    "reason": "OFF DAY",
+    "__v": 0
+  },
+  {
+    "_id": "698d531ba27d7ddcc2e4bb1c",
+    "id": "LV-C0VCB7TQH",
+    "doctorId": "vxyqlw8oq",
+    "date": "2026-02-13",
+    "type": "full",
+    "reason": "OFF DAY",
+    "__v": 0
+  },
+  {
+    "_id": "698d5337f312dfb5f30da274",
+    "id": "LV-WM6ZR36TF",
+    "doctorId": "vxyqlw8oq",
+    "date": "2026-02-14",
+    "type": "full",
+    "reason": "OFF DAY",
+    "__v": 0
+  },
+  {
+    "_id": "698d534b12ce532614a37148",
+    "id": "LV-UHS1C6Q1N",
+    "doctorId": "vxyqlw8oq",
+    "date": "2026-02-15",
+    "type": "full",
+    "reason": "OFF DAY",
+    "__v": 0
+  },
+  {
+    "_id": "698d5355e192452282e25174",
+    "id": "LV-B7QRQGC20",
+    "doctorId": "vxyqlw8oq",
+    "date": "2026-02-16",
+    "type": "full",
+    "reason": "OFF DAY",
+    "__v": 0
+  },
+  {
+    "_id": "698d5366e192452282e2517d",
+    "id": "LV-UIX3T9O5V",
+    "doctorId": "vxyqlw8oq",
+    "date": "2026-02-20",
+    "type": "full",
+    "reason": "OFF DAY",
+    "__v": 0
+  },
+  {
+    "_id": "698d5370e192452282e25187",
+    "id": "LV-ILCJF4L54",
+    "doctorId": "vxyqlw8oq",
+    "date": "2026-02-21",
+    "type": "full",
+    "reason": "OFF DAY",
+    "__v": 0
+  },
+  {
+    "_id": "698d537e12ce532614a37153",
+    "id": "LV-4QBCXQRT7",
+    "doctorId": "vxyqlw8oq",
+    "date": "2026-02-27",
+    "type": "full",
+    "reason": "OFF DAY",
+    "__v": 0
+  },
+  {
+    "_id": "698d538b12ce532614a3715d",
+    "id": "LV-9U9767RGZ",
+    "doctorId": "vxyqlw8oq",
+    "date": "2026-02-28",
+    "type": "full",
+    "reason": "OFF DAY",
+    "__v": 0
+  },
+  {
+    "_id": "698d555812ce532614a3726a",
+    "id": "LV-20Q9SYHN9",
+    "doctorId": "vxyqlw8oq",
+    "date": "2026-02-06",
+    "type": "full",
+    "reason": "OFF DAY",
+    "__v": 0
+  },
+  {
+    "_id": "698d55a9a27d7ddcc2e4bc07",
+    "id": "LV-KWEYOH5SK",
+    "doctorId": "vxyqlw8oq",
+    "date": "2026-02-07",
+    "type": "full",
+    "reason": "OFF DAY",
+    "__v": 0
+  },
+  {
+    "_id": "698d55d1a27d7ddcc2e4bc24",
+    "id": "LV-3ST5311B7",
+    "doctorId": "vxyqlw8oq",
+    "date": "2026-03-06",
+    "type": "full",
+    "reason": "OFF DAY",
+    "__v": 0
+  },
+  {
+    "_id": "698d55de12ce532614a372bc",
+    "id": "LV-DGWDNTJWC",
+    "doctorId": "vxyqlw8oq",
+    "date": "2026-03-07",
+    "type": "full",
+    "reason": "OFF DAY",
+    "__v": 0
+  },
+  {
+    "_id": "698d55f65b62ea50aad14305",
+    "id": "LV-GU68AGTOD",
+    "doctorId": "vxyqlw8oq",
+    "date": "2026-03-13",
+    "type": "full",
+    "reason": "OFF DAY",
+    "__v": 0
+  },
+  {
+    "_id": "698d560c12ce532614a372dd",
+    "id": "LV-CQ8BB7NS6",
+    "doctorId": "vxyqlw8oq",
+    "date": "2026-03-14",
+    "type": "full",
+    "reason": "OFF DAY",
+    "__v": 0
+  },
+  {
+    "_id": "698d562512ce532614a372fe",
+    "id": "LV-JAGKXX3XC",
+    "doctorId": "vxyqlw8oq",
+    "date": "2026-03-20",
+    "type": "full",
+    "reason": "OFF DAY",
+    "__v": 0
+  },
+  {
+    "_id": "698d56315b62ea50aad14321",
+    "id": "LV-NKB27VDNJ",
+    "doctorId": "vxyqlw8oq",
+    "date": "2026-03-21",
+    "type": "full",
+    "reason": "OFF DAY",
+    "__v": 0
+  },
+  {
+    "_id": "698d56405b62ea50aad1433a",
+    "id": "LV-R6Q1GO58V",
+    "doctorId": "vxyqlw8oq",
+    "date": "2026-03-27",
+    "type": "full",
+    "reason": "OFF DAY",
+    "__v": 0
+  },
+  {
+    "_id": "698d564fa27d7ddcc2e4bc41",
+    "id": "LV-4C38QNWU9",
+    "doctorId": "vxyqlw8oq",
+    "date": "2026-03-28",
+    "type": "full",
+    "reason": "OFF DAY",
+    "__v": 0
+  },
+  {
+    "_id": "69b77da427695d96933f2e7a",
+    "id": "LV-1AT3Z2HCU",
+    "doctorId": "d5",
+    "date": "2026-04-03",
+    "type": "full",
+    "reason": "",
+    "__v": 0
+  },
+  {
+    "_id": "69b77dafed87ba342762db37",
+    "id": "LV-Y9GRDLXGJ",
+    "doctorId": "d5",
+    "date": "2026-04-03",
+    "type": "full",
+    "reason": "",
+    "__v": 0
+  },
+  {
+    "_id": "69b7888827695d96933f5032",
+    "id": "LV-ZF8PQHC0V",
+    "doctorId": "d6",
+    "date": "2026-04-02",
+    "type": "full",
+    "reason": "OFF DAY",
+    "__v": 0
+  },
+  {
+    "_id": "69b788b227695d96933f50f7",
+    "id": "LV-VRAJEIWCG",
+    "doctorId": "d6",
+    "date": "2026-04-09",
+    "type": "full",
+    "reason": "OFF DAY",
+    "__v": 0
+  },
+  {
+    "_id": "69b788df1da227c69e09b898",
+    "id": "LV-30PIAHK76",
+    "doctorId": "d6",
+    "date": "2026-04-14",
+    "type": "full",
+    "reason": "OFF DAY",
+    "__v": 0
+  },
+  {
+    "_id": "69b789061da227c69e09b952",
+    "id": "LV-IELSPI9Y7",
+    "doctorId": "d6",
+    "date": "2026-04-16",
+    "type": "full",
+    "reason": "OFF DAY",
+    "__v": 0
+  },
+  {
+    "_id": "69b789211da227c69e09ba0b",
+    "id": "LV-P8VR30JAU",
+    "doctorId": "d6",
+    "date": "2026-04-21",
+    "type": "full",
+    "reason": "OFF DAY",
+    "__v": 0
+  },
+  {
+    "_id": "69b789551da227c69e09bacb",
+    "id": "LV-301X3V9QM",
+    "doctorId": "d6",
+    "date": "2026-04-22",
+    "type": "full",
+    "reason": "OFF DAY",
+    "__v": 0
+  },
+  {
+    "_id": "69b7896c1da227c69e09bb86",
+    "id": "LV-CMUOYFPLR",
+    "doctorId": "d6",
+    "date": "2026-04-23",
+    "type": "full",
+    "reason": "OFF DAY",
+    "__v": 0
+  },
+  {
+    "_id": "69b7899427695d96933f51bc",
+    "id": "LV-N3XRTL638",
+    "doctorId": "d6",
+    "date": "2026-04-30",
+    "type": "full",
+    "reason": "OFF DAY",
+    "__v": 0
+  },
+  {
+    "_id": "69b78af0a51975770b712746",
+    "id": "LV-8QG33WPHO",
+    "doctorId": "d5",
+    "date": "2026-04-14",
+    "type": "full",
+    "reason": "OFF DAY",
+    "__v": 0
+  },
+  {
+    "_id": "69bd5478e79a21fd9922333f",
+    "id": "LV-MHHP4FN1U",
+    "doctorId": "d6",
+    "date": "2026-03-20",
+    "type": "full",
+    "reason": "",
+    "__v": 0
+  },
+  {
+    "_id": "69bd547ae79a21fd99223391",
+    "id": "LV-DQVAV4VDI",
+    "doctorId": "d6",
+    "date": "2026-03-20",
+    "type": "full",
+    "reason": "",
+    "__v": 0
+  },
+  {
+    "_id": "69bd547fe79a21fd99223648",
+    "id": "LV-AR8YXOYL0",
+    "doctorId": "d6",
+    "date": "2026-03-20",
+    "type": "full",
+    "reason": "",
+    "__v": 0
+  },
+  {
+    "_id": "69bd548ee79a21fd99223902",
+    "id": "LV-J4EK92L2R",
+    "doctorId": "d6",
+    "date": "2026-03-21",
+    "type": "full",
+    "reason": "",
+    "__v": 0
+  },
+  {
+    "_id": "69bd54a2e0ed468cefe35daf",
+    "id": "LV-NS5DZRXQY",
+    "doctorId": "d6",
+    "date": "2026-03-22",
+    "type": "full",
+    "reason": "",
+    "__v": 0
+  }
+]

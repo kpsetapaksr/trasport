@@ -1,0 +1,17 @@
+[
+  {
+    "_id": "69c739c9a5acef1647329fc4",
+    "id": "57233b8c-3e54-4752-95e4-91db1780e4e2",
+    "name": "RECEPTION",
+    "photo": "https://ui-avatars.com/api/?name=RECEPTION&background=random",
+    "phone": "01162157400",
+    "email": "klinikgigihr@gmail.com",
+    "shift": "full-day",
+    "startTime": "09:00",
+    "endTime": "06:00",
+    "isActive": true,
+    "createdAt": "2026-03-28T02:15:37.665Z",
+    "updatedAt": "2026-03-28T02:15:37.665Z",
+    "__v": 0
+  }
+]

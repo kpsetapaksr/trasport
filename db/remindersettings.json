@@ -1,0 +1,18 @@
+[
+  {
+    "_id": "694b747734348c8065396053",
+    "enabled": true,
+    "daysBefore": [
+      1
+    ],
+    "channels": {
+      "sms": true,
+      "whatsapp": false,
+      "email": true
+    },
+    "createdAt": "2025-12-24T05:04:55.951Z",
+    "updatedAt": "2026-01-05T05:44:23.547Z",
+    "__v": 0,
+    "updatedBy": "admin"
+  }
+]

@@ -1,0 +1,81 @@
+[
+  {
+    "_id": "6946507ea737a1418d9c5bb1",
+    "doctorId": null,
+    "__v": 0,
+    "days": {
+      "Monday": [
+        {
+          "start": "09:00",
+          "end": "09:10",
+          "_id": "6946507ed8a1f9bab0b84e2a"
+        },
+        {
+          "start": "12:00",
+          "end": "10:00",
+          "_id": "6946507ed8a1f9bab0b84e2b"
+        }
+      ]
+    }
+  },
+  {
+    "_id": "69465699a737a1418d9c5bf5",
+    "doctorId": "d1",
+    "__v": 0,
+    "days": {
+      "Monday": [
+        {
+          "start": "09:00",
+          "end": "20:10",
+          "_id": "69465c24aa0c7091e5cba59b"
+        }
+      ],
+      "Tuesday": [
+        {
+          "start": "09:00",
+          "end": "20:00",
+          "_id": "694694da1bb5faaa5e0815f5"
+        }
+      ],
+      "Wednesday": [
+        {
+          "start": "09:00",
+          "end": "13:00",
+          "_id": "694694da1bb5faaa5e0815f4"
+        }
+      ],
+      "Thursday": [],
+      "Friday": [],
+      "Saturday": [],
+      "Sunday": []
+    }
+  },
+  {
+    "_id": "6946886ca737a1418d9c5e91",
+    "doctorId": "d2",
+    "__v": 0,
+    "days": {
+      "Monday": [],
+      "Tuesday": [],
+      "Wednesday": [],
+      "Thursday": [],
+      "Friday": [],
+      "Saturday": [],
+      "Sunday": []
+    }
+  },
+  {
+    "_id": "695214f3a737a1418d9cd77f",
+    "doctorId": "d3",
+    "__v": 0,
+    "days": {
+      "Thursday": [
+        {
+          "start": "09:00",
+          "end": "17:00",
+          "_id": "69521b3b5e55adc57a7b34e1"
+        }
+      ]
+    }
+  }
+]

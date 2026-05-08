@@ -1,0 +1,31 @@
+[
+  {
+    "_id": "6943ece8958f0604720382b6",
+    "clinicName": "Klinik Pergigian Setapak",
+    "address": "Jalan Genting Klang, Setapak, 53300 Kuala Lumpur",
+    "phone": "+6011-62157400",
+    "email": "Kpsetapaksr@gmail.com",
+    "defaultSlotDuration": 10,
+    "workingHours": {
+      "start": "09:00",
+      "end": "18:00"
+    },
+    "notifications": {
+      "sms": true,
+      "whatsapp": true,
+      "emailReminders": true
+    },
+    "__v": 0,
+    "moceanConfig": {
+      "apiKey": "apit-yyiQ6CaZRhhBHQ1brNHmUeGAUlweR1jd-nrRkR",
+      "apiSecret": "",
+      "senderId": "kpsrirampai",
+      "whatsappNumber": ""
+    },
+    "whatsappConfig": {
+      "accessToken": "",
+      "phoneNumberId": "",
+      "businessAccountId": ""
+    }
+  }
+]

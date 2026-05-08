@@ -1,0 +1,14 @@
+[
+  {
+    "_id": "6943ece8958f0604720382b4",
+    "id": "admin-1",
+    "username": "admin",
+    "password": "$2b$10$oh3i04SMNbJFQkspEz3fXu0sF5FIMqideG7p7rItr3BHSc6IF141G",
+    "role": "super-admin",
+    "lastLogin": "2026-04-09T07:10:52.099Z",
+    "__v": 0,
+    "failedAttempts": 0,
+    "updatedAt": "2026-04-09T07:10:52.099Z",
+    "lockUntil": null
+  }
+]

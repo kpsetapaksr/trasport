@@ -1,0 +1,32 @@
+[
+  {
+    "_id": "69c783fa527fe5354d2f4049",
+    "vehicle_name": "TOYOTA ALPHARD",
+    "vehicle_number": "MEE 3400",
+    "vehicle_type": "Car",
+    "seat_capacity": 5,
+    "driver_name": "TEST",
+    "driver_phone": "0102342323",
+    "status": "active",
+    "createdAt": "2026-03-28T07:32:10.546Z",
+    "updatedAt": "2026-03-31T12:45:45.420Z",
+    "__v": 0,
+    "driver_id": "69cba7de5429d54c5f04d665",
+    "image": "/uploads/vehicles/upload-1774960454478.webp"
+  },
+  {
+    "_id": "69ca4cbf38b5c19306adb431",
+    "vehicle_name": "Toyota Glanza",
+    "vehicle_number": "MEE 4800",
+    "vehicle_type": "Car",
+    "seat_capacity": 5,
+    "driver_name": "John",
+    "driver_phone": "1478523690",
+    "status": "active",
+    "createdAt": "2026-03-30T10:13:19.869Z",
+    "updatedAt": "2026-04-08T06:44:57.809Z",
+    "__v": 0,
+    "driver_id": "69cb7921fec65213438e9f35",
+    "image": "/uploads/vehicles/upload-1775630688298.png"
+  }
+]

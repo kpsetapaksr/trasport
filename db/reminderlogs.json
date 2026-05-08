@@ -1,0 +1,2365 @@
+[
+  {
+    "_id": "694b74b534348c806539605c",
+    "id": "LOG-RHZ7TDYY3",
+    "timestamp": "2025-12-24T05:05:57.957Z",
+    "processedDates": [
+      {
+        "date": "2025-12-24",
+        "daysBefore": 1,
+        "appointmentsFound": 0,
+        "remindersSent": {
+          "whatsapp": 0,
+          "email": 0,
+          "sms": 0
+        },
+        "_id": "694b74b534348c806539605d"
+      },
+      {
+        "date": "2025-12-25",
+        "daysBefore": 2,
+        "appointmentsFound": 1,
+        "remindersSent": {
+          "whatsapp": 0,
+          "email": 0,
+          "sms": 0
+        },
+        "_id": "694b74b634348c806539605e"
+      }
+    ],
+    "totalReminders": 0,
+    "status": "success",
+    "errors": [],
+    "createdAt": "2025-12-24T05:05:58.036Z",
+    "updatedAt": "2025-12-24T05:05:58.036Z",
+    "__v": 0
+  },
+  {
+    "_id": "694b88a3f9ceee95ad407fb1",
+    "id": "LOG-W483CNSYN",
+    "timestamp": "2025-12-24T06:30:59.363Z",
+    "processedDates": [
+      {
+        "date": "2025-12-25",
+        "daysBefore": 1,
+        "appointmentsFound": 1,
+        "remindersSent": {
+          "whatsapp": 0,
+          "email": 0,
+          "sms": 0
+        },
+        "_id": "694b88a3f9ceee95ad407fb2"
+      }
+    ],
+    "totalReminders": 0,
+    "status": "success",
+    "errors": [],
+    "createdAt": "2025-12-24T06:30:59.375Z",
+    "updatedAt": "2025-12-24T06:30:59.375Z",
+    "__v": 0
+  },
+  {
+    "_id": "694ca8588d3e4f8505e85861",
+    "id": "LOG-QK6D1V0DI",
+    "timestamp": "2025-12-25T02:58:32.330Z",
+    "processedDates": [
+      {
+        "date": "2025-12-26",
+        "daysBefore": 1,
+        "appointmentsFound": 0,
+        "remindersSent": {
+          "whatsapp": 0,
+          "email": 0,
+          "sms": 0
+        },
+        "_id": "694ca8588d3e4f8505e85862"
+      }
+    ],
+    "totalReminders": 0,
+    "status": "success",
+    "errors": [],
+    "createdAt": "2025-12-25T02:58:32.340Z",
+    "updatedAt": "2025-12-25T02:58:32.340Z",
+    "__v": 0
+  },
+  {
+    "_id": "695b50604840d8c13f989a64",
+    "id": "LOG-Y33MP9TKS",
+    "timestamp": "2026-01-05T05:47:12.384Z",
+    "processedDates": [
+      {
+        "date": "2026-01-06",
+        "daysBefore": 1,
+        "appointmentsFound": 114,
+        "remindersSent": {
+          "whatsapp": 0,
+          "email": 37,
+          "sms": 114
+        },
+        "_id": "695b50604840d8c13f989a65"
+      }
+    ],
+    "totalReminders": 151,
+    "status": "success",
+    "errors": [],
+    "createdAt": "2026-01-05T05:47:12.393Z",
+    "updatedAt": "2026-01-05T05:47:12.393Z",
+    "__v": 0
+  },
+  {
+    "_id": "695b9389b4e35eb091ceb7f4",
+    "id": "LOG-7JIEQBE3I",
+    "timestamp": "2026-01-05T10:33:45.813Z",
+    "processedDates": [
+      {
+        "date": "2026-01-06",
+        "daysBefore": 1,
+        "appointmentsFound": 117,
+        "remindersSent": {
+          "whatsapp": 0,
+          "email": 38,
+          "sms": 117
+        },
+        "_id": "695b9389b4e35eb091ceb7f5"
+      }
+    ],
+    "totalReminders": 155,
+    "status": "success",
+    "errors": [],
+    "createdAt": "2026-01-05T10:33:45.817Z",
+    "updatedAt": "2026-01-05T10:33:45.817Z",
+    "__v": 0
+  },
+  {
+    "_id": "695cea2629d4683f45b6a319",
+    "id": "LOG-R33OAU4LZ",
+    "timestamp": "2026-01-06T10:55:34.408Z",
+    "processedDates": [
+      {
+        "date": "2026-01-07",
+        "daysBefore": 1,
+        "appointmentsFound": 128,
+        "remindersSent": {
+          "whatsapp": 0,
+          "email": 50,
+          "sms": 128
+        },
+        "_id": "695cea2629d4683f45b6a31a"
+      }
+    ],
+    "totalReminders": 178,
+    "status": "success",
+    "errors": [],
+    "createdAt": "2026-01-06T10:55:34.411Z",
+    "updatedAt": "2026-01-06T10:55:34.411Z",
+    "__v": 0
+  },
+  {
+    "_id": "695e3b046b2b0f7681b32304",
+    "id": "LOG-J9DWT7DZF",
+    "timestamp": "2026-01-07T10:52:52.793Z",
+    "processedDates": [
+      {
+        "date": "2026-01-08",
+        "daysBefore": 1,
+        "appointmentsFound": 63,
+        "remindersSent": {
+          "whatsapp": 0,
+          "email": 28,
+          "sms": 63
+        },
+        "_id": "695e3b046b2b0f7681b32305"
+      }
+    ],
+    "totalReminders": 91,
+    "status": "success",
+    "errors": [],
+    "createdAt": "2026-01-07T10:52:52.798Z",
+    "updatedAt": "2026-01-07T10:52:52.798Z",
+    "__v": 0
+  },
+  {
+    "_id": "695f83dd7b5a7bad48507c92",
+    "id": "LOG-MN1RHA4KU",
+    "timestamp": "2026-01-08T10:15:57.638Z",
+    "processedDates": [
+      {
+        "date": "2026-01-09",
+        "daysBefore": 1,
+        "appointmentsFound": 84,
+        "remindersSent": {
+          "whatsapp": 0,
+          "email": 37,
+          "sms": 83
+        },
+        "_id": "695f83dd7b5a7bad48507c93"
+      }
+    ],
+    "totalReminders": 120,
+    "status": "success",
+    "errors": [],
+    "createdAt": "2026-01-08T10:15:57.642Z",
+    "updatedAt": "2026-01-08T10:15:57.642Z",
+    "__v": 0
+  },
+  {
+    "_id": "6960d42ddd6aeaa1dadac502",
+    "id": "LOG-LZ3CTQRJB",
+    "timestamp": "2026-01-09T10:10:53.027Z",
+    "processedDates": [
+      {
+        "date": "2026-01-10",
+        "daysBefore": 1,
+        "appointmentsFound": 128,
+        "remindersSent": {
+          "whatsapp": 0,
+          "email": 53,
+          "sms": 128
+        },
+        "_id": "6960d42ddd6aeaa1dadac503"
+      }
+    ],
+    "totalReminders": 181,
+    "status": "success",
+    "errors": [],
+    "createdAt": "2026-01-09T10:10:53.032Z",
+    "updatedAt": "2026-01-09T10:10:53.032Z",
+    "__v": 0
+  },
+  {
+    "_id": "69622b1c3941711a7e56b51b",
+    "id": "LOG-USNPU4V6J",
+    "timestamp": "2026-01-10T10:34:04.774Z",
+    "processedDates": [
+      {
+        "date": "2026-01-11",
+        "daysBefore": 1,
+        "appointmentsFound": 67,
+        "remindersSent": {
+          "whatsapp": 0,
+          "email": 18,
+          "sms": 67
+        },
+        "_id": "69622b1c3941711a7e56b51c"
+      }
+    ],
+    "totalReminders": 85,
+    "status": "success",
+    "errors": [],
+    "createdAt": "2026-01-10T10:34:04.778Z",
+    "updatedAt": "2026-01-10T10:34:04.778Z",
+    "__v": 0
+  },
+  {
+    "_id": "69637ca46dc6a487e7564a7c",
+    "id": "LOG-EN6FY2X4F",
+    "timestamp": "2026-01-11T10:34:12.455Z",
+    "processedDates": [
+      {
+        "date": "2026-01-12",
+        "daysBefore": 1,
+        "appointmentsFound": 74,
+        "remindersSent": {
+          "whatsapp": 0,
+          "email": 34,
+          "sms": 74
+        },
+        "_id": "69637ca46dc6a487e7564a7d"
+      }
+    ],
+    "totalReminders": 108,
+    "status": "success",
+    "errors": [],
+    "createdAt": "2026-01-11T10:34:12.459Z",
+    "updatedAt": "2026-01-11T10:34:12.459Z",
+    "__v": 0
+  },
+  {
+    "_id": "6964d18280381809c0c3aa5d",
+    "id": "LOG-XLTWUW9HB",
+    "timestamp": "2026-01-12T10:48:34.197Z",
+    "processedDates": [
+      {
+        "date": "2026-01-13",
+        "daysBefore": 1,
+        "appointmentsFound": 91,
+        "remindersSent": {
+          "whatsapp": 0,
+          "email": 48,
+          "sms": 88
+        },
+        "_id": "6964d18280381809c0c3aa5e"
+      }
+    ],
+    "totalReminders": 136,
+    "status": "success",
+    "errors": [],
+    "createdAt": "2026-01-12T10:48:34.201Z",
+    "updatedAt": "2026-01-12T10:48:34.201Z",
+    "__v": 0
+  },
+  {
+    "_id": "6966214f948636cadfe45b83",
+    "id": "LOG-YLZHOY63H",
+    "timestamp": "2026-01-13T10:41:19.561Z",
+    "processedDates": [
+      {
+        "date": "2026-01-14",
+        "daysBefore": 1,
+        "appointmentsFound": 69,
+        "remindersSent": {
+          "whatsapp": 0,
+          "email": 30,
+          "sms": 67
+        },
+        "_id": "6966214f948636cadfe45b84"
+      }
+    ],
+    "totalReminders": 97,
+    "status": "success",
+    "errors": [],
+    "createdAt": "2026-01-13T10:41:19.566Z",
+    "updatedAt": "2026-01-13T10:41:19.566Z",
+    "__v": 0
+  },
+  {
+    "_id": "6967757a3077f124a72f4e1b",
+    "id": "LOG-1K4P6OU9E",
+    "timestamp": "2026-01-14T10:52:42.534Z",
+    "processedDates": [
+      {
+        "date": "2026-01-15",
+        "daysBefore": 1,
+        "appointmentsFound": 53,
+        "remindersSent": {
+          "whatsapp": 0,
+          "email": 23,
+          "sms": 51
+        },
+        "_id": "6967757a3077f124a72f4e1c"
+      }
+    ],
+    "totalReminders": 74,
+    "status": "success",
+    "errors": [],
+    "createdAt": "2026-01-14T10:52:42.538Z",
+    "updatedAt": "2026-01-14T10:52:42.538Z",
+    "__v": 0
+  },
+  {
+    "_id": "6968c7050513c91e78c97427",
+    "id": "LOG-3XQAUDC5C",
+    "timestamp": "2026-01-15T10:52:53.109Z",
+    "processedDates": [
+      {
+        "date": "2026-01-16",
+        "daysBefore": 1,
+        "appointmentsFound": 61,
+        "remindersSent": {
+          "whatsapp": 0,
+          "email": 29,
+          "sms": 59
+        },
+        "_id": "6968c7050513c91e78c97428"
+      }
+    ],
+    "totalReminders": 88,
+    "status": "success",
+    "errors": [],
+    "createdAt": "2026-01-15T10:52:53.113Z",
+    "updatedAt": "2026-01-15T10:52:53.113Z",
+    "__v": 0
+  },
+  {
+    "_id": "696a0d3efe79d06fd5afbb20",
+    "id": "LOG-RCD5TX2MW",
+    "timestamp": "2026-01-16T10:04:46.226Z",
+    "processedDates": [
+      {
+        "date": "2026-01-17",
+        "daysBefore": 1,
+        "appointmentsFound": 105,
+        "remindersSent": {
+          "whatsapp": 0,
+          "email": 2,
+          "sms": 102
+        },
+        "_id": "696a0d3efe79d06fd5afbb21"
+      }
+    ],
+    "totalReminders": 104,
+    "status": "success",
+    "errors": [],
+    "createdAt": "2026-01-16T10:04:46.230Z",
+    "updatedAt": "2026-01-16T10:04:46.230Z",
+    "__v": 0
+  },
+  {
+    "_id": "696b5edb5812b123cdd42c84",
+    "id": "LOG-Y73GG1RUR",
+    "timestamp": "2026-01-17T10:05:15.875Z",
+    "processedDates": [
+      {
+        "date": "2026-01-18",
+        "daysBefore": 1,
+        "appointmentsFound": 135,
+        "remindersSent": {
+          "whatsapp": 0,
+          "email": 2,
+          "sms": 132
+        },
+        "_id": "696b5edb5812b123cdd42c85"
+      }
+    ],
+    "totalReminders": 134,
+    "status": "success",
+    "errors": [],
+    "createdAt": "2026-01-17T10:05:15.879Z",
+    "updatedAt": "2026-01-17T10:05:15.879Z",
+    "__v": 0
+  },
+  {
+    "_id": "696cb026dd0c9d827d2a32e4",
+    "id": "LOG-ZMJCF1CQ4",
+    "timestamp": "2026-01-18T10:04:22.770Z",
+    "processedDates": [
+      {
+        "date": "2026-01-19",
+        "daysBefore": 1,
+        "appointmentsFound": 84,
+        "remindersSent": {
+          "whatsapp": 0,
+          "email": 2,
+          "sms": 80
+        },
+        "_id": "696cb026dd0c9d827d2a32e5"
+      }
+    ],
+    "totalReminders": 82,
+    "status": "success",
+    "errors": [],
+    "createdAt": "2026-01-18T10:04:22.772Z",
+    "updatedAt": "2026-01-18T10:04:22.772Z",
+    "__v": 0
+  },
+  {
+    "_id": "696e01a7ce3276790d6a56fb",
+    "id": "LOG-VZ8OUYFI8",
+    "timestamp": "2026-01-19T10:04:23.717Z",
+    "processedDates": [
+      {
+        "date": "2026-01-20",
+        "daysBefore": 1,
+        "appointmentsFound": 74,
+        "remindersSent": {
+          "whatsapp": 0,
+          "email": 2,
+          "sms": 72
+        },
+        "_id": "696e01a7ce3276790d6a56fc"
+      }
+    ],
+    "totalReminders": 74,
+    "status": "success",
+    "errors": [],
+    "createdAt": "2026-01-19T10:04:23.721Z",
+    "updatedAt": "2026-01-19T10:04:23.721Z",
+    "__v": 0
+  },
+  {
+    "_id": "696f532244b5786f4577155b",
+    "id": "LOG-A5RHO9TMR",
+    "timestamp": "2026-01-20T10:04:18.008Z",
+    "processedDates": [
+      {
+        "date": "2026-01-21",
+        "daysBefore": 1,
+        "appointmentsFound": 73,
+        "remindersSent": {
+          "whatsapp": 0,
+          "email": 2,
+          "sms": 69
+        },
+        "_id": "696f532244b5786f4577155c"
+      }
+    ],
+    "totalReminders": 71,
+    "status": "success",
+    "errors": [],
+    "createdAt": "2026-01-20T10:04:18.011Z",
+    "updatedAt": "2026-01-20T10:04:18.011Z",
+    "__v": 0
+  },
+  {
+    "_id": "6970a4a5a6696558ad2a8c08",
+    "id": "LOG-IFB5E27IF",
+    "timestamp": "2026-01-21T10:04:21.221Z",
+    "processedDates": [
+      {
+        "date": "2026-01-22",
+        "daysBefore": 1,
+        "appointmentsFound": 68,
+        "remindersSent": {
+          "whatsapp": 0,
+          "email": 2,
+          "sms": 66
+        },
+        "_id": "6970a4a5a6696558ad2a8c09"
+      }
+    ],
+    "totalReminders": 68,
+    "status": "success",
+    "errors": [],
+    "createdAt": "2026-01-21T10:04:21.224Z",
+    "updatedAt": "2026-01-21T10:04:21.224Z",
+    "__v": 0
+  },
+  {
+    "_id": "6971f61c0ca0c4cd7d8e8fb3",
+    "id": "LOG-PXS8V51GZ",
+    "timestamp": "2026-01-22T10:04:12.840Z",
+    "processedDates": [
+      {
+        "date": "2026-01-23",
+        "daysBefore": 1,
+        "appointmentsFound": 62,
+        "remindersSent": {
+          "whatsapp": 0,
+          "email": 2,
+          "sms": 62
+        },
+        "_id": "6971f61c0ca0c4cd7d8e8fb4"
+      }
+    ],
+    "totalReminders": 64,
+    "status": "success",
+    "errors": [],
+    "createdAt": "2026-01-22T10:04:12.844Z",
+    "updatedAt": "2026-01-22T10:04:12.844Z",
+    "__v": 0
+  },
+  {
+    "_id": "697347ce0a937cde5faa4ed9",
+    "id": "LOG-7ADVSDHL3",
+    "timestamp": "2026-01-23T10:05:02.662Z",
+    "processedDates": [
+      {
+        "date": "2026-01-24",
+        "daysBefore": 1,
+        "appointmentsFound": 132,
+        "remindersSent": {
+          "whatsapp": 0,
+          "email": 2,
+          "sms": 130
+        },
+        "_id": "697347ce0a937cde5faa4eda"
+      }
+    ],
+    "totalReminders": 132,
+    "status": "success",
+    "errors": [],
+    "createdAt": "2026-01-23T10:05:02.665Z",
+    "updatedAt": "2026-01-23T10:05:02.665Z",
+    "__v": 0
+  },
+  {
+    "_id": "69749937af4c32d291804717",
+    "id": "LOG-69FNEO21J",
+    "timestamp": "2026-01-24T10:04:39.965Z",
+    "processedDates": [
+      {
+        "date": "2026-01-25",
+        "daysBefore": 1,
+        "appointmentsFound": 103,
+        "remindersSent": {
+          "whatsapp": 0,
+          "email": 2,
+          "sms": 102
+        },
+        "_id": "69749937af4c32d291804718"
+      }
+    ],
+    "totalReminders": 104,
+    "status": "success",
+    "errors": [],
+    "createdAt": "2026-01-24T10:04:39.968Z",
+    "updatedAt": "2026-01-24T10:04:39.968Z",
+    "__v": 0
+  },
+  {
+    "_id": "6975eac827ad6001f33db7bc",
+    "id": "LOG-JLY8RWDMA",
+    "timestamp": "2026-01-25T10:04:56.970Z",
+    "processedDates": [
+      {
+        "date": "2026-01-26",
+        "daysBefore": 1,
+        "appointmentsFound": 116,
+        "remindersSent": {
+          "whatsapp": 0,
+          "email": 2,
+          "sms": 108
+        },
+        "_id": "6975eac827ad6001f33db7bd"
+      }
+    ],
+    "totalReminders": 110,
+    "status": "success",
+    "errors": [],
+    "createdAt": "2026-01-25T10:04:56.973Z",
+    "updatedAt": "2026-01-25T10:04:56.973Z",
+    "__v": 0
+  },
+  {
+    "_id": "69773c3f2dd8eec64dfa0527",
+    "id": "LOG-G4XET9QZX",
+    "timestamp": "2026-01-26T10:04:47.136Z",
+    "processedDates": [
+      {
+        "date": "2026-01-27",
+        "daysBefore": 1,
+        "appointmentsFound": 111,
+        "remindersSent": {
+          "whatsapp": 0,
+          "email": 2,
+          "sms": 103
+        },
+        "_id": "69773c3f2dd8eec64dfa0528"
+      }
+    ],
+    "totalReminders": 105,
+    "status": "success",
+    "errors": [],
+    "createdAt": "2026-01-26T10:04:47.140Z",
+    "updatedAt": "2026-01-26T10:04:47.140Z",
+    "__v": 0
+  },
+  {
+    "_id": "69788dc0a15875df8185bece",
+    "id": "LOG-BIJXBZTLX",
+    "timestamp": "2026-01-27T10:04:48.635Z",
+    "processedDates": [
+      {
+        "date": "2026-01-28",
+        "daysBefore": 1,
+        "appointmentsFound": 117,
+        "remindersSent": {
+          "whatsapp": 0,
+          "email": 2,
+          "sms": 110
+        },
+        "_id": "69788dc0a15875df8185becf"
+      }
+    ],
+    "totalReminders": 112,
+    "status": "success",
+    "errors": [],
+    "createdAt": "2026-01-27T10:04:48.639Z",
+    "updatedAt": "2026-01-27T10:04:48.639Z",
+    "__v": 0
+  },
+  {
+    "_id": "6979df2778592c7b25a10425",
+    "id": "LOG-Y77K7GBYZ",
+    "timestamp": "2026-01-28T10:04:23.783Z",
+    "processedDates": [
+      {
+        "date": "2026-01-29",
+        "daysBefore": 1,
+        "appointmentsFound": 76,
+        "remindersSent": {
+          "whatsapp": 0,
+          "email": 2,
+          "sms": 75
+        },
+        "_id": "6979df2778592c7b25a10426"
+      }
+    ],
+    "totalReminders": 77,
+    "status": "success",
+    "errors": [],
+    "createdAt": "2026-01-28T10:04:23.786Z",
+    "updatedAt": "2026-01-28T10:04:23.786Z",
+    "__v": 0
+  },
+  {
+    "_id": "697b320f6c1ef6029afe46c3",
+    "id": "LOG-J84QYKRDC",
+    "timestamp": "2026-01-29T10:10:23.007Z",
+    "processedDates": [
+      {
+        "date": "2026-01-30",
+        "daysBefore": 1,
+        "appointmentsFound": 73,
+        "remindersSent": {
+          "whatsapp": 0,
+          "email": 2,
+          "sms": 66
+        },
+        "_id": "697b320f6c1ef6029afe46c4"
+      }
+    ],
+    "totalReminders": 68,
+    "status": "success",
+    "errors": [],
+    "createdAt": "2026-01-29T10:10:23.012Z",
+    "updatedAt": "2026-01-29T10:10:23.012Z",
+    "__v": 0
+  },
+  {
+    "_id": "697c837c77f30b60d3f18bf4",
+    "id": "LOG-H9SH9RJ02",
+    "timestamp": "2026-01-30T10:10:04.856Z",
+    "processedDates": [
+      {
+        "date": "2026-01-31",
+        "daysBefore": 1,
+        "appointmentsFound": 44,
+        "remindersSent": {
+          "whatsapp": 0,
+          "email": 2,
+          "sms": 43
+        },
+        "_id": "697c837c77f30b60d3f18bf5"
+      }
+    ],
+    "totalReminders": 45,
+    "status": "success",
+    "errors": [],
+    "createdAt": "2026-01-30T10:10:04.859Z",
+    "updatedAt": "2026-01-30T10:10:04.859Z",
+    "__v": 0
+  },
+  {
+    "_id": "697dd4e28b2765dfe17162d6",
+    "id": "LOG-64YTXOI4E",
+    "timestamp": "2026-01-31T10:09:38.237Z",
+    "processedDates": [
+      {
+        "date": "2026-02-01",
+        "daysBefore": 1,
+        "appointmentsFound": 7,
+        "remindersSent": {
+          "whatsapp": 0,
+          "email": 2,
+          "sms": 7
+        },
+        "_id": "697dd4e28b2765dfe17162d7"
+      }
+    ],
+    "totalReminders": 9,
+    "status": "success",
+    "errors": [],
+    "createdAt": "2026-01-31T10:09:38.242Z",
+    "updatedAt": "2026-01-31T10:09:38.242Z",
+    "__v": 0
+  },
+  {
+    "_id": "697f26685669be379d2a5c57",
+    "id": "LOG-7UH7QCQGH",
+    "timestamp": "2026-02-01T10:09:44.525Z",
+    "processedDates": [
+      {
+        "date": "2026-02-02",
+        "daysBefore": 1,
+        "appointmentsFound": 17,
+        "remindersSent": {
+          "whatsapp": 0,
+          "email": 2,
+          "sms": 17
+        },
+        "_id": "697f26685669be379d2a5c58"
+      }
+    ],
+    "totalReminders": 19,
+    "status": "success",
+    "errors": [],
+    "createdAt": "2026-02-01T10:09:44.528Z",
+    "updatedAt": "2026-02-01T10:09:44.528Z",
+    "__v": 0
+  },
+  {
+    "_id": "6980785158028244c84b68e5",
+    "id": "LOG-ITNZEI6AH",
+    "timestamp": "2026-02-02T10:11:29.170Z",
+    "processedDates": [
+      {
+        "date": "2026-02-03",
+        "daysBefore": 1,
+        "appointmentsFound": 153,
+        "remindersSent": {
+          "whatsapp": 0,
+          "email": 2,
+          "sms": 151
+        },
+        "_id": "6980785158028244c84b68e6"
+      }
+    ],
+    "totalReminders": 153,
+    "status": "success",
+    "errors": [],
+    "createdAt": "2026-02-02T10:11:29.175Z",
+    "updatedAt": "2026-02-02T10:11:29.175Z",
+    "__v": 0
+  },
+  {
+    "_id": "6981c9c3071da64d3c52b7a8",
+    "id": "LOG-EGN5BU5LX",
+    "timestamp": "2026-02-03T10:11:15.101Z",
+    "processedDates": [
+      {
+        "date": "2026-02-04",
+        "daysBefore": 1,
+        "appointmentsFound": 130,
+        "remindersSent": {
+          "whatsapp": 0,
+          "email": 2,
+          "sms": 125
+        },
+        "_id": "6981c9c3071da64d3c52b7a9"
+      }
+    ],
+    "totalReminders": 127,
+    "status": "success",
+    "errors": [],
+    "createdAt": "2026-02-03T10:11:15.105Z",
+    "updatedAt": "2026-02-03T10:11:15.105Z",
+    "__v": 0
+  },
+  {
+    "_id": "69831b04d656a179d944e54d",
+    "id": "LOG-7PX76QHEH",
+    "timestamp": "2026-02-04T10:10:12.148Z",
+    "processedDates": [
+      {
+        "date": "2026-02-05",
+        "daysBefore": 1,
+        "appointmentsFound": 55,
+        "remindersSent": {
+          "whatsapp": 0,
+          "email": 2,
+          "sms": 52
+        },
+        "_id": "69831b04d656a179d944e54e"
+      }
+    ],
+    "totalReminders": 54,
+    "status": "success",
+    "errors": [],
+    "createdAt": "2026-02-04T10:10:12.151Z",
+    "updatedAt": "2026-02-04T10:10:12.151Z",
+    "__v": 0
+  },
+  {
+    "_id": "69846ca27879c8c6c331dc20",
+    "id": "LOG-9WD3AVTWN",
+    "timestamp": "2026-02-05T10:10:42.320Z",
+    "processedDates": [
+      {
+        "date": "2026-02-06",
+        "daysBefore": 1,
+        "appointmentsFound": 93,
+        "remindersSent": {
+          "whatsapp": 0,
+          "email": 2,
+          "sms": 90
+        },
+        "_id": "69846ca27879c8c6c331dc21"
+      }
+    ],
+    "totalReminders": 92,
+    "status": "success",
+    "errors": [],
+    "createdAt": "2026-02-05T10:10:42.323Z",
+    "updatedAt": "2026-02-05T10:10:42.323Z",
+    "__v": 0
+  },
+  {
+    "_id": "6985be571a4be166c349a741",
+    "id": "LOG-KM7QXA6PZ",
+    "timestamp": "2026-02-06T10:11:35.306Z",
+    "processedDates": [
+      {
+        "date": "2026-02-07",
+        "daysBefore": 1,
+        "appointmentsFound": 163,
+        "remindersSent": {
+          "whatsapp": 0,
+          "email": 2,
+          "sms": 160
+        },
+        "_id": "6985be571a4be166c349a742"
+      }
+    ],
+    "totalReminders": 162,
+    "status": "success",
+    "errors": [],
+    "createdAt": "2026-02-06T10:11:35.310Z",
+    "updatedAt": "2026-02-06T10:11:35.310Z",
+    "__v": 0
+  },
+  {
+    "_id": "69870fc1455630c9f1f52643",
+    "id": "LOG-AUVEU5JIB",
+    "timestamp": "2026-02-07T10:11:13.024Z",
+    "processedDates": [
+      {
+        "date": "2026-02-08",
+        "daysBefore": 1,
+        "appointmentsFound": 135,
+        "remindersSent": {
+          "whatsapp": 0,
+          "email": 2,
+          "sms": 134
+        },
+        "_id": "69870fc1455630c9f1f52644"
+      }
+    ],
+    "totalReminders": 136,
+    "status": "success",
+    "errors": [],
+    "createdAt": "2026-02-07T10:11:13.028Z",
+    "updatedAt": "2026-02-07T10:11:13.028Z",
+    "__v": 0
+  },
+  {
+    "_id": "69886135e94401acd37dffcc",
+    "id": "LOG-TGS1HZ5KB",
+    "timestamp": "2026-02-08T10:11:01.399Z",
+    "processedDates": [
+      {
+        "date": "2026-02-09",
+        "daysBefore": 1,
+        "appointmentsFound": 121,
+        "remindersSent": {
+          "whatsapp": 0,
+          "email": 2,
+          "sms": 117
+        },
+        "_id": "69886135e94401acd37dffcd"
+      }
+    ],
+    "totalReminders": 119,
+    "status": "success",
+    "errors": [],
+    "createdAt": "2026-02-08T10:11:01.404Z",
+    "updatedAt": "2026-02-08T10:11:01.404Z",
+    "__v": 0
+  },
+  {
+    "_id": "6989b2be45a5f292ed609416",
+    "id": "LOG-WLGMTTDKF",
+    "timestamp": "2026-02-09T10:11:10.090Z",
+    "processedDates": [
+      {
+        "date": "2026-02-10",
+        "daysBefore": 1,
+        "appointmentsFound": 139,
+        "remindersSent": {
+          "whatsapp": 0,
+          "email": 2,
+          "sms": 128
+        },
+        "_id": "6989b2be45a5f292ed609417"
+      }
+    ],
+    "totalReminders": 130,
+    "status": "success",
+    "errors": [],
+    "createdAt": "2026-02-09T10:11:10.095Z",
+    "updatedAt": "2026-02-09T10:11:10.095Z",
+    "__v": 0
+  },
+  {
+    "_id": "698b043e660a5c2aa752b07c",
+    "id": "LOG-7X2M2ZTB9",
+    "timestamp": "2026-02-10T10:11:10.725Z",
+    "processedDates": [
+      {
+        "date": "2026-02-11",
+        "daysBefore": 1,
+        "appointmentsFound": 134,
+        "remindersSent": {
+          "whatsapp": 0,
+          "email": 2,
+          "sms": 120
+        },
+        "_id": "698b043e660a5c2aa752b07d"
+      }
+    ],
+    "totalReminders": 122,
+    "status": "success",
+    "errors": [],
+    "createdAt": "2026-02-10T10:11:10.728Z",
+    "updatedAt": "2026-02-10T10:11:10.728Z",
+    "__v": 0
+  },
+  {
+    "_id": "698c55946b49e43cd20178a5",
+    "id": "LOG-OBWEDMVRR",
+    "timestamp": "2026-02-11T10:10:28.264Z",
+    "processedDates": [
+      {
+        "date": "2026-02-12",
+        "daysBefore": 1,
+        "appointmentsFound": 77,
+        "remindersSent": {
+          "whatsapp": 0,
+          "email": 2,
+          "sms": 71
+        },
+        "_id": "698c55946b49e43cd20178a6"
+      }
+    ],
+    "totalReminders": 73,
+    "status": "success",
+    "errors": [],
+    "createdAt": "2026-02-11T10:10:28.269Z",
+    "updatedAt": "2026-02-11T10:10:28.269Z",
+    "__v": 0
+  },
+  {
+    "_id": "698da725f537ed56d3335495",
+    "id": "LOG-D6G34CH46",
+    "timestamp": "2026-02-12T10:10:45.242Z",
+    "processedDates": [
+      {
+        "date": "2026-02-13",
+        "daysBefore": 1,
+        "appointmentsFound": 90,
+        "remindersSent": {
+          "whatsapp": 0,
+          "email": 2,
+          "sms": 86
+        },
+        "_id": "698da725f537ed56d3335496"
+      }
+    ],
+    "totalReminders": 88,
+    "status": "success",
+    "errors": [],
+    "createdAt": "2026-02-12T10:10:45.246Z",
+    "updatedAt": "2026-02-12T10:10:45.246Z",
+    "__v": 0
+  },
+  {
+    "_id": "698ef8c51d826cce0cd9e607",
+    "id": "LOG-3ZB7B105Y",
+    "timestamp": "2026-02-13T10:11:17.232Z",
+    "processedDates": [
+      {
+        "date": "2026-02-14",
+        "daysBefore": 1,
+        "appointmentsFound": 136,
+        "remindersSent": {
+          "whatsapp": 0,
+          "email": 2,
+          "sms": 131
+        },
+        "_id": "698ef8c51d826cce0cd9e608"
+      }
+    ],
+    "totalReminders": 133,
+    "status": "success",
+    "errors": [],
+    "createdAt": "2026-02-13T10:11:17.240Z",
+    "updatedAt": "2026-02-13T10:11:17.240Z",
+    "__v": 0
+  },
+  {
+    "_id": "69904a58ad7d9bf31742c3ea",
+    "id": "LOG-PI30W8SW2",
+    "timestamp": "2026-02-14T10:11:36.072Z",
+    "processedDates": [
+      {
+        "date": "2026-02-15",
+        "daysBefore": 1,
+        "appointmentsFound": 171,
+        "remindersSent": {
+          "whatsapp": 0,
+          "email": 2,
+          "sms": 165
+        },
+        "_id": "69904a58ad7d9bf31742c3eb"
+      }
+    ],
+    "totalReminders": 167,
+    "status": "success",
+    "errors": [],
+    "createdAt": "2026-02-14T10:11:36.075Z",
+    "updatedAt": "2026-02-14T10:11:36.075Z",
+    "__v": 0
+  },
+  {
+    "_id": "69919bbf30e071700a9bdc50",
+    "id": "LOG-9RZM6SYO5",
+    "timestamp": "2026-02-15T10:11:11.683Z",
+    "processedDates": [
+      {
+        "date": "2026-02-16",
+        "daysBefore": 1,
+        "appointmentsFound": 143,
+        "remindersSent": {
+          "whatsapp": 0,
+          "email": 2,
+          "sms": 133
+        },
+        "_id": "69919bbf30e071700a9bdc51"
+      }
+    ],
+    "totalReminders": 135,
+    "status": "success",
+    "errors": [],
+    "createdAt": "2026-02-15T10:11:11.686Z",
+    "updatedAt": "2026-02-15T10:11:11.686Z",
+    "__v": 0
+  },
+  {
+    "_id": "6992ed08c400f78189c52716",
+    "id": "LOG-LA58SFEXD",
+    "timestamp": "2026-02-16T10:10:16.408Z",
+    "processedDates": [
+      {
+        "date": "2026-02-17",
+        "daysBefore": 1,
+        "appointmentsFound": 66,
+        "remindersSent": {
+          "whatsapp": 0,
+          "email": 2,
+          "sms": 59
+        },
+        "_id": "6992ed08c400f78189c52717"
+      }
+    ],
+    "totalReminders": 61,
+    "status": "success",
+    "errors": [],
+    "createdAt": "2026-02-16T10:10:16.411Z",
+    "updatedAt": "2026-02-16T10:10:16.411Z",
+    "__v": 0
+  },
+  {
+    "_id": "69943e7e26bb68fdebb0104a",
+    "id": "LOG-PUNCYR5EU",
+    "timestamp": "2026-02-17T10:10:06.378Z",
+    "processedDates": [
+      {
+        "date": "2026-02-18",
+        "daysBefore": 1,
+        "appointmentsFound": 49,
+        "remindersSent": {
+          "whatsapp": 0,
+          "email": 2,
+          "sms": 46
+        },
+        "_id": "69943e7e26bb68fdebb0104b"
+      }
+    ],
+    "totalReminders": 48,
+    "status": "success",
+    "errors": [],
+    "createdAt": "2026-02-17T10:10:06.382Z",
+    "updatedAt": "2026-02-17T10:10:06.382Z",
+    "__v": 0
+  },
+  {
+    "_id": "69958ffc7f1b84f3b7074344",
+    "id": "LOG-9NCD06B8R",
+    "timestamp": "2026-02-18T10:10:04.269Z",
+    "processedDates": [
+      {
+        "date": "2026-02-19",
+        "daysBefore": 1,
+        "appointmentsFound": 49,
+        "remindersSent": {
+          "whatsapp": 0,
+          "email": 2,
+          "sms": 40
+        },
+        "_id": "69958ffc7f1b84f3b7074345"
+      }
+    ],
+    "totalReminders": 42,
+    "status": "success",
+    "errors": [],
+    "createdAt": "2026-02-18T10:10:04.272Z",
+    "updatedAt": "2026-02-18T10:10:04.272Z",
+    "__v": 0
+  },
+  {
+    "_id": "6996e187456ba7d241a1cdda",
+    "id": "LOG-XW862USO8",
+    "timestamp": "2026-02-19T10:10:15.423Z",
+    "processedDates": [
+      {
+        "date": "2026-02-20",
+        "daysBefore": 1,
+        "appointmentsFound": 62,
+        "remindersSent": {
+          "whatsapp": 0,
+          "email": 2,
+          "sms": 58
+        },
+        "_id": "6996e187456ba7d241a1cddb"
+      }
+    ],
+    "totalReminders": 60,
+    "status": "success",
+    "errors": [],
+    "createdAt": "2026-02-19T10:10:15.427Z",
+    "updatedAt": "2026-02-19T10:10:15.427Z",
+    "__v": 0
+  },
+  {
+    "_id": "69983309a423869f8ac4b8db",
+    "id": "LOG-SE0KYGDBB",
+    "timestamp": "2026-02-20T10:10:17.634Z",
+    "processedDates": [
+      {
+        "date": "2026-02-21",
+        "daysBefore": 1,
+        "appointmentsFound": 65,
+        "remindersSent": {
+          "whatsapp": 0,
+          "email": 2,
+          "sms": 61
+        },
+        "_id": "69983309a423869f8ac4b8dc"
+      }
+    ],
+    "totalReminders": 63,
+    "status": "success",
+    "errors": [],
+    "createdAt": "2026-02-20T10:10:17.638Z",
+    "updatedAt": "2026-02-20T10:10:17.638Z",
+    "__v": 0
+  },
+  {
+    "_id": "699984b192286e17a8234e36",
+    "id": "LOG-54UN6SGW1",
+    "timestamp": "2026-02-21T10:10:57.799Z",
+    "processedDates": [
+      {
+        "date": "2026-02-22",
+        "daysBefore": 1,
+        "appointmentsFound": 121,
+        "remindersSent": {
+          "whatsapp": 0,
+          "email": 2,
+          "sms": 114
+        },
+        "_id": "699984b192286e17a8234e37"
+      }
+    ],
+    "totalReminders": 116,
+    "status": "success",
+    "errors": [],
+    "createdAt": "2026-02-21T10:10:57.803Z",
+    "updatedAt": "2026-02-21T10:10:57.803Z",
+    "__v": 0
+  },
+  {
+    "_id": "699ad5fc0ae4a24230a34e8b",
+    "id": "LOG-5EC8I99C4",
+    "timestamp": "2026-02-22T10:10:04.100Z",
+    "processedDates": [
+      {
+        "date": "2026-02-23",
+        "daysBefore": 1,
+        "appointmentsFound": 45,
+        "remindersSent": {
+          "whatsapp": 0,
+          "email": 2,
+          "sms": 43
+        },
+        "_id": "699ad5fc0ae4a24230a34e8c"
+      }
+    ],
+    "totalReminders": 45,
+    "status": "success",
+    "errors": [],
+    "createdAt": "2026-02-22T10:10:04.104Z",
+    "updatedAt": "2026-02-22T10:10:04.104Z",
+    "__v": 0
+  },
+  {
+    "_id": "699c27a7d1a5a6ef9c179c14",
+    "id": "LOG-L7G5BMI96",
+    "timestamp": "2026-02-23T10:10:47.139Z",
+    "processedDates": [
+      {
+        "date": "2026-02-24",
+        "daysBefore": 1,
+        "appointmentsFound": 106,
+        "remindersSent": {
+          "whatsapp": 0,
+          "email": 2,
+          "sms": 100
+        },
+        "_id": "699c27a7d1a5a6ef9c179c15"
+      }
+    ],
+    "totalReminders": 102,
+    "status": "success",
+    "errors": [],
+    "createdAt": "2026-02-23T10:10:47.143Z",
+    "updatedAt": "2026-02-23T10:10:47.143Z",
+    "__v": 0
+  },
+  {
+    "_id": "699d7925f8642babf5b7a37a",
+    "id": "LOG-7XQ8LYKAH",
+    "timestamp": "2026-02-24T10:10:45.689Z",
+    "processedDates": [
+      {
+        "date": "2026-02-25",
+        "daysBefore": 1,
+        "appointmentsFound": 103,
+        "remindersSent": {
+          "whatsapp": 0,
+          "email": 2,
+          "sms": 97
+        },
+        "_id": "699d7925f8642babf5b7a37b"
+      }
+    ],
+    "totalReminders": 99,
+    "status": "success",
+    "errors": [],
+    "createdAt": "2026-02-24T10:10:45.692Z",
+    "updatedAt": "2026-02-24T10:10:45.692Z",
+    "__v": 0
+  },
+  {
+    "_id": "699eca9417afdca7839bc70d",
+    "id": "LOG-8WDOMU0VZ",
+    "timestamp": "2026-02-25T10:10:28.397Z",
+    "processedDates": [
+      {
+        "date": "2026-02-26",
+        "daysBefore": 1,
+        "appointmentsFound": 77,
+        "remindersSent": {
+          "whatsapp": 0,
+          "email": 2,
+          "sms": 75
+        },
+        "_id": "699eca9417afdca7839bc70e"
+      }
+    ],
+    "totalReminders": 77,
+    "status": "success",
+    "errors": [],
+    "createdAt": "2026-02-25T10:10:28.401Z",
+    "updatedAt": "2026-02-25T10:10:28.401Z",
+    "__v": 0
+  },
+  {
+    "_id": "69a01c4ac47fd7e6e4830520",
+    "id": "LOG-SEWK1QEZE",
+    "timestamp": "2026-02-26T10:11:22.113Z",
+    "processedDates": [
+      {
+        "date": "2026-02-27",
+        "daysBefore": 1,
+        "appointmentsFound": 140,
+        "remindersSent": {
+          "whatsapp": 0,
+          "email": 2,
+          "sms": 132
+        },
+        "_id": "69a01c4ac47fd7e6e4830521"
+      }
+    ],
+    "totalReminders": 134,
+    "status": "success",
+    "errors": [],
+    "createdAt": "2026-02-26T10:11:22.117Z",
+    "updatedAt": "2026-02-26T10:11:22.117Z",
+    "__v": 0
+  },
+  {
+    "_id": "69a16db69ebba001a1e57a37",
+    "id": "LOG-QO5OSQ5G3",
+    "timestamp": "2026-02-27T10:11:02.961Z",
+    "processedDates": [
+      {
+        "date": "2026-02-28",
+        "daysBefore": 1,
+        "appointmentsFound": 125,
+        "remindersSent": {
+          "whatsapp": 0,
+          "email": 2,
+          "sms": 121
+        },
+        "_id": "69a16db69ebba001a1e57a38"
+      }
+    ],
+    "totalReminders": 123,
+    "status": "success",
+    "errors": [],
+    "createdAt": "2026-02-27T10:11:02.965Z",
+    "updatedAt": "2026-02-27T10:11:02.965Z",
+    "__v": 0
+  },
+  {
+    "_id": "69a2bf6960e6b33f785df1d1",
+    "id": "LOG-G9EJP1239",
+    "timestamp": "2026-02-28T10:11:53.846Z",
+    "processedDates": [
+      {
+        "date": "2026-03-01",
+        "daysBefore": 1,
+        "appointmentsFound": 190,
+        "remindersSent": {
+          "whatsapp": 0,
+          "email": 2,
+          "sms": 188
+        },
+        "_id": "69a2bf6960e6b33f785df1d2"
+      }
+    ],
+    "totalReminders": 190,
+    "status": "success",
+    "errors": [],
+    "createdAt": "2026-02-28T10:11:53.850Z",
+    "updatedAt": "2026-02-28T10:11:53.850Z",
+    "__v": 0
+  },
+  {
+    "_id": "69a410a92d9dbbe81f0eaf04",
+    "id": "LOG-OYGQ9OR5F",
+    "timestamp": "2026-03-01T10:10:49.871Z",
+    "processedDates": [
+      {
+        "date": "2026-03-02",
+        "daysBefore": 1,
+        "appointmentsFound": 109,
+        "remindersSent": {
+          "whatsapp": 0,
+          "email": 2,
+          "sms": 102
+        },
+        "_id": "69a410a92d9dbbe81f0eaf05"
+      }
+    ],
+    "totalReminders": 104,
+    "status": "success",
+    "errors": [],
+    "createdAt": "2026-03-01T10:10:49.876Z",
+    "updatedAt": "2026-03-01T10:10:49.876Z",
+    "__v": 0
+  },
+  {
+    "_id": "69a5621090a43e8aad2c92a6",
+    "id": "LOG-35ICNVUPE",
+    "timestamp": "2026-03-02T10:10:24.914Z",
+    "processedDates": [
+      {
+        "date": "2026-03-03",
+        "daysBefore": 1,
+        "appointmentsFound": 76,
+        "remindersSent": {
+          "whatsapp": 0,
+          "email": 2,
+          "sms": 70
+        },
+        "_id": "69a5621090a43e8aad2c92a7"
+      }
+    ],
+    "totalReminders": 72,
+    "status": "success",
+    "errors": [],
+    "createdAt": "2026-03-02T10:10:24.918Z",
+    "updatedAt": "2026-03-02T10:10:24.918Z",
+    "__v": 0
+  },
+  {
+    "_id": "69a6b3a0cc9b97a7ffc0f384",
+    "id": "LOG-D4IIY8VS7",
+    "timestamp": "2026-03-03T10:10:40.349Z",
+    "processedDates": [
+      {
+        "date": "2026-03-04",
+        "daysBefore": 1,
+        "appointmentsFound": 98,
+        "remindersSent": {
+          "whatsapp": 0,
+          "email": 2,
+          "sms": 91
+        },
+        "_id": "69a6b3a0cc9b97a7ffc0f385"
+      }
+    ],
+    "totalReminders": 93,
+    "status": "success",
+    "errors": [],
+    "createdAt": "2026-03-03T10:10:40.353Z",
+    "updatedAt": "2026-03-03T10:10:40.353Z",
+    "__v": 0
+  },
+  {
+    "_id": "69a805155a94747e1349b30d",
+    "id": "LOG-AIC8TCP5N",
+    "timestamp": "2026-03-04T10:10:29.629Z",
+    "processedDates": [
+      {
+        "date": "2026-03-05",
+        "daysBefore": 1,
+        "appointmentsFound": 76,
+        "remindersSent": {
+          "whatsapp": 0,
+          "email": 2,
+          "sms": 74
+        },
+        "_id": "69a805155a94747e1349b30e"
+      }
+    ],
+    "totalReminders": 76,
+    "status": "success",
+    "errors": [],
+    "createdAt": "2026-03-04T10:10:29.631Z",
+    "updatedAt": "2026-03-04T10:10:29.631Z",
+    "__v": 0
+  },
+  {
+    "_id": "69a9569808e4bf238aaca718",
+    "id": "LOG-6HMD22CX5",
+    "timestamp": "2026-03-05T10:10:32.650Z",
+    "processedDates": [
+      {
+        "date": "2026-03-06",
+        "daysBefore": 1,
+        "appointmentsFound": 85,
+        "remindersSent": {
+          "whatsapp": 0,
+          "email": 2,
+          "sms": 80
+        },
+        "_id": "69a9569808e4bf238aaca719"
+      }
+    ],
+    "totalReminders": 82,
+    "status": "success",
+    "errors": [],
+    "createdAt": "2026-03-05T10:10:32.653Z",
+    "updatedAt": "2026-03-05T10:10:32.653Z",
+    "__v": 0
+  },
+  {
+    "_id": "69aaa81aa19eadaa10053fe9",
+    "id": "LOG-VGT9Y88EA",
+    "timestamp": "2026-03-06T10:10:34.872Z",
+    "processedDates": [
+      {
+        "date": "2026-03-07",
+        "daysBefore": 1,
+        "appointmentsFound": 88,
+        "remindersSent": {
+          "whatsapp": 0,
+          "email": 2,
+          "sms": 83
+        },
+        "_id": "69aaa81aa19eadaa10053fea"
+      }
+    ],
+    "totalReminders": 85,
+    "status": "success",
+    "errors": [],
+    "createdAt": "2026-03-06T10:10:34.876Z",
+    "updatedAt": "2026-03-06T10:10:34.876Z",
+    "__v": 0
+  },
+  {
+    "_id": "69abf99264349f43565101cc",
+    "id": "LOG-O2XVN1QMD",
+    "timestamp": "2026-03-07T10:10:26.127Z",
+    "processedDates": [
+      {
+        "date": "2026-03-08",
+        "daysBefore": 1,
+        "appointmentsFound": 73,
+        "remindersSent": {
+          "whatsapp": 0,
+          "email": 2,
+          "sms": 72
+        },
+        "_id": "69abf99264349f43565101cd"
+      }
+    ],
+    "totalReminders": 74,
+    "status": "success",
+    "errors": [],
+    "createdAt": "2026-03-07T10:10:26.131Z",
+    "updatedAt": "2026-03-07T10:10:26.131Z",
+    "__v": 0
+  },
+  {
+    "_id": "69ad4b2799ae94740d276614",
+    "id": "LOG-5E89BTWRS",
+    "timestamp": "2026-03-08T10:10:47.939Z",
+    "processedDates": [
+      {
+        "date": "2026-03-09",
+        "daysBefore": 1,
+        "appointmentsFound": 107,
+        "remindersSent": {
+          "whatsapp": 0,
+          "email": 6,
+          "sms": 100
+        },
+        "_id": "69ad4b2799ae94740d276615"
+      }
+    ],
+    "totalReminders": 106,
+    "status": "success",
+    "errors": [],
+    "createdAt": "2026-03-08T10:10:47.942Z",
+    "updatedAt": "2026-03-08T10:10:47.942Z",
+    "__v": 0
+  },
+  {
+    "_id": "69ae9cb701be9efede2a0f6d",
+    "id": "LOG-KB0FECWSS",
+    "timestamp": "2026-03-09T10:11:03.642Z",
+    "processedDates": [
+      {
+        "date": "2026-03-10",
+        "daysBefore": 1,
+        "appointmentsFound": 119,
+        "remindersSent": {
+          "whatsapp": 0,
+          "email": 2,
+          "sms": 117
+        },
+        "_id": "69ae9cb701be9efede2a0f6e"
+      }
+    ],
+    "totalReminders": 119,
+    "status": "success",
+    "errors": [],
+    "createdAt": "2026-03-09T10:11:03.646Z",
+    "updatedAt": "2026-03-09T10:11:03.646Z",
+    "__v": 0
+  },
+  {
+    "_id": "69afee3da13285b9832c9911",
+    "id": "LOG-FJU4ILX6W",
+    "timestamp": "2026-03-10T10:11:09.393Z",
+    "processedDates": [
+      {
+        "date": "2026-03-11",
+        "daysBefore": 1,
+        "appointmentsFound": 133,
+        "remindersSent": {
+          "whatsapp": 0,
+          "email": 2,
+          "sms": 127
+        },
+        "_id": "69afee3da13285b9832c9912"
+      }
+    ],
+    "totalReminders": 129,
+    "status": "success",
+    "errors": [],
+    "createdAt": "2026-03-10T10:11:09.396Z",
+    "updatedAt": "2026-03-10T10:11:09.396Z",
+    "__v": 0
+  },
+  {
+    "_id": "69b13f98dceada1617ba148b",
+    "id": "LOG-EPY22UEDY",
+    "timestamp": "2026-03-11T10:10:32.729Z",
+    "processedDates": [
+      {
+        "date": "2026-03-12",
+        "daysBefore": 1,
+        "appointmentsFound": 79,
+        "remindersSent": {
+          "whatsapp": 0,
+          "email": 2,
+          "sms": 73
+        },
+        "_id": "69b13f98dceada1617ba148c"
+      }
+    ],
+    "totalReminders": 75,
+    "status": "success",
+    "errors": [],
+    "createdAt": "2026-03-11T10:10:32.734Z",
+    "updatedAt": "2026-03-11T10:10:32.734Z",
+    "__v": 0
+  },
+  {
+    "_id": "69b2913c559013046291b59f",
+    "id": "LOG-2RXSY72ZL",
+    "timestamp": "2026-03-12T10:11:08.173Z",
+    "processedDates": [
+      {
+        "date": "2026-03-13",
+        "daysBefore": 1,
+        "appointmentsFound": 129,
+        "remindersSent": {
+          "whatsapp": 0,
+          "email": 2,
+          "sms": 127
+        },
+        "_id": "69b2913c559013046291b5a0"
+      }
+    ],
+    "totalReminders": 129,
+    "status": "success",
+    "errors": [],
+    "createdAt": "2026-03-12T10:11:08.177Z",
+    "updatedAt": "2026-03-12T10:11:08.177Z",
+    "__v": 0
+  },
+  {
+    "_id": "69b3e2e3268ab93d41ce6920",
+    "id": "LOG-9QVL4E5WK",
+    "timestamp": "2026-03-13T10:11:47.080Z",
+    "processedDates": [
+      {
+        "date": "2026-03-14",
+        "daysBefore": 1,
+        "appointmentsFound": 185,
+        "remindersSent": {
+          "whatsapp": 0,
+          "email": 2,
+          "sms": 178
+        },
+        "_id": "69b3e2e3268ab93d41ce6921"
+      }
+    ],
+    "totalReminders": 180,
+    "status": "success",
+    "errors": [],
+    "createdAt": "2026-03-13T10:11:47.084Z",
+    "updatedAt": "2026-03-13T10:11:47.084Z",
+    "__v": 0
+  },
+  {
+    "_id": "69b53478b254f549bc962cb3",
+    "id": "LOG-OET9C0OSX",
+    "timestamp": "2026-03-14T10:12:08.507Z",
+    "processedDates": [
+      {
+        "date": "2026-03-15",
+        "daysBefore": 1,
+        "appointmentsFound": 212,
+        "remindersSent": {
+          "whatsapp": 0,
+          "email": 2,
+          "sms": 204
+        },
+        "_id": "69b53478b254f549bc962cb4"
+      }
+    ],
+    "totalReminders": 206,
+    "status": "success",
+    "errors": [],
+    "createdAt": "2026-03-14T10:12:08.511Z",
+    "updatedAt": "2026-03-14T10:12:08.511Z",
+    "__v": 0
+  },
+  {
+    "_id": "69b685d2faf80b969e8cee43",
+    "id": "LOG-O8N5W54R1",
+    "timestamp": "2026-03-15T10:11:30.704Z",
+    "processedDates": [
+      {
+        "date": "2026-03-16",
+        "daysBefore": 1,
+        "appointmentsFound": 163,
+        "remindersSent": {
+          "whatsapp": 0,
+          "email": 2,
+          "sms": 155
+        },
+        "_id": "69b685d2faf80b969e8cee44"
+      }
+    ],
+    "totalReminders": 157,
+    "status": "success",
+    "errors": [],
+    "createdAt": "2026-03-15T10:11:30.709Z",
+    "updatedAt": "2026-03-15T10:11:30.709Z",
+    "__v": 0
+  },
+  {
+    "_id": "69b7d74eebcd0368ed446df6",
+    "id": "LOG-WY6IY8BC3",
+    "timestamp": "2026-03-16T10:11:26.797Z",
+    "processedDates": [
+      {
+        "date": "2026-03-17",
+        "daysBefore": 1,
+        "appointmentsFound": 155,
+        "remindersSent": {
+          "whatsapp": 0,
+          "email": 2,
+          "sms": 150
+        },
+        "_id": "69b7d74eebcd0368ed446df7"
+      }
+    ],
+    "totalReminders": 152,
+    "status": "success",
+    "errors": [],
+    "createdAt": "2026-03-16T10:11:26.801Z",
+    "updatedAt": "2026-03-16T10:11:26.801Z",
+    "__v": 0
+  },
+  {
+    "_id": "69b928df08a6d8385d335c12",
+    "id": "LOG-8DJ7101PB",
+    "timestamp": "2026-03-17T10:11:43.790Z",
+    "processedDates": [
+      {
+        "date": "2026-03-18",
+        "daysBefore": 1,
+        "appointmentsFound": 165,
+        "remindersSent": {
+          "whatsapp": 0,
+          "email": 5,
+          "sms": 161
+        },
+        "_id": "69b928df08a6d8385d335c13"
+      }
+    ],
+    "totalReminders": 166,
+    "status": "success",
+    "errors": [],
+    "createdAt": "2026-03-17T10:11:43.793Z",
+    "updatedAt": "2026-03-17T10:11:43.793Z",
+    "__v": 0
+  },
+  {
+    "_id": "69ba79e66419aa99efdf892d",
+    "id": "LOG-UDHSUQTJK",
+    "timestamp": "2026-03-18T10:09:42.367Z",
+    "processedDates": [
+      {
+        "date": "2026-03-19",
+        "daysBefore": 1,
+        "appointmentsFound": 16,
+        "remindersSent": {
+          "whatsapp": 0,
+          "email": 5,
+          "sms": 13
+        },
+        "_id": "69ba79e66419aa99efdf892e"
+      }
+    ],
+    "totalReminders": 18,
+    "status": "success",
+    "errors": [],
+    "createdAt": "2026-03-18T10:09:42.371Z",
+    "updatedAt": "2026-03-18T10:09:42.371Z",
+    "__v": 0
+  },
+  {
+    "_id": "69bbcb5e09b0429f6742d873",
+    "id": "LOG-VWZMRY4YL",
+    "timestamp": "2026-03-19T10:09:34.554Z",
+    "processedDates": [
+      {
+        "date": "2026-03-20",
+        "daysBefore": 1,
+        "appointmentsFound": 2,
+        "remindersSent": {
+          "whatsapp": 0,
+          "email": 2,
+          "sms": 2
+        },
+        "_id": "69bbcb5e09b0429f6742d874"
+      }
+    ],
+    "totalReminders": 4,
+    "status": "success",
+    "errors": [],
+    "createdAt": "2026-03-19T10:09:34.558Z",
+    "updatedAt": "2026-03-19T10:09:34.558Z",
+    "__v": 0
+  },
+  {
+    "_id": "69bd1cdbf61a014248763b69",
+    "id": "LOG-FHH38SK0E",
+    "timestamp": "2026-03-20T10:09:31.738Z",
+    "processedDates": [],
+    "totalReminders": 0,
+    "status": "success",
+    "errors": [],
+    "createdAt": "2026-03-20T10:09:31.743Z",
+    "updatedAt": "2026-03-20T10:09:31.743Z",
+    "__v": 0
+  },
+  {
+    "_id": "69be6e5bce360a3e24a551c4",
+    "id": "LOG-5085YT1AQ",
+    "timestamp": "2026-03-21T10:09:31.744Z",
+    "processedDates": [],
+    "totalReminders": 0,
+    "status": "success",
+    "errors": [],
+    "createdAt": "2026-03-21T10:09:31.749Z",
+    "updatedAt": "2026-03-21T10:09:31.749Z",
+    "__v": 0
+  },
+  {
+    "_id": "69bfbffdbbb55985c08f16c7",
+    "id": "LOG-YCNR78ETV",
+    "timestamp": "2026-03-22T10:10:05.711Z",
+    "processedDates": [
+      {
+        "date": "2026-03-23",
+        "daysBefore": 1,
+        "appointmentsFound": 47,
+        "remindersSent": {
+          "whatsapp": 0,
+          "email": 5,
+          "sms": 44
+        },
+        "_id": "69bfbffdbbb55985c08f16c8"
+      }
+    ],
+    "totalReminders": 49,
+    "status": "success",
+    "errors": [],
+    "createdAt": "2026-03-22T10:10:05.714Z",
+    "updatedAt": "2026-03-22T10:10:05.714Z",
+    "__v": 0
+  },
+  {
+    "_id": "69c111906248e8c0d00f8504",
+    "id": "LOG-HT3VCLPZD",
+    "timestamp": "2026-03-23T10:10:24.247Z",
+    "processedDates": [
+      {
+        "date": "2026-03-24",
+        "daysBefore": 1,
+        "appointmentsFound": 58,
+        "remindersSent": {
+          "whatsapp": 0,
+          "email": 5,
+          "sms": 57
+        },
+        "_id": "69c111906248e8c0d00f8505"
+      }
+    ],
+    "totalReminders": 62,
+    "status": "success",
+    "errors": [],
+    "createdAt": "2026-03-23T10:10:24.251Z",
+    "updatedAt": "2026-03-23T10:10:24.251Z",
+    "__v": 0
+  },
+  {
+    "_id": "69c2630c22fd1a0300bd3e9b",
+    "id": "LOG-IAB4YVJWW",
+    "timestamp": "2026-03-24T10:10:20.216Z",
+    "processedDates": [
+      {
+        "date": "2026-03-25",
+        "daysBefore": 1,
+        "appointmentsFound": 65,
+        "remindersSent": {
+          "whatsapp": 0,
+          "email": 5,
+          "sms": 58
+        },
+        "_id": "69c2630c22fd1a0300bd3e9c"
+      }
+    ],
+    "totalReminders": 63,
+    "status": "success",
+    "errors": [],
+    "createdAt": "2026-03-24T10:10:20.218Z",
+    "updatedAt": "2026-03-24T10:10:20.218Z",
+    "__v": 0
+  },
+  {
+    "_id": "69c3b48e1d9b304881cf6632",
+    "id": "LOG-C5YCVW8KD",
+    "timestamp": "2026-03-25T10:10:22.590Z",
+    "processedDates": [
+      {
+        "date": "2026-03-26",
+        "daysBefore": 1,
+        "appointmentsFound": 71,
+        "remindersSent": {
+          "whatsapp": 0,
+          "email": 5,
+          "sms": 66
+        },
+        "_id": "69c3b48e1d9b304881cf6633"
+      }
+    ],
+    "totalReminders": 71,
+    "status": "success",
+    "errors": [],
+    "createdAt": "2026-03-25T10:10:22.597Z",
+    "updatedAt": "2026-03-25T10:10:22.597Z",
+    "__v": 0
+  },
+  {
+    "_id": "69c5062e7ae76ecd596d7888",
+    "id": "LOG-Q99WNX7KL",
+    "timestamp": "2026-03-26T10:10:54.152Z",
+    "processedDates": [
+      {
+        "date": "2026-03-27",
+        "daysBefore": 1,
+        "appointmentsFound": 119,
+        "remindersSent": {
+          "whatsapp": 0,
+          "email": 5,
+          "sms": 109
+        },
+        "_id": "69c5062e7ae76ecd596d7889"
+      }
+    ],
+    "totalReminders": 114,
+    "status": "success",
+    "errors": [],
+    "createdAt": "2026-03-26T10:10:54.155Z",
+    "updatedAt": "2026-03-26T10:10:54.155Z",
+    "__v": 0
+  },
+  {
+    "_id": "69c660c3399d480eac836567",
+    "id": "LOG-M1TYLOYW3",
+    "timestamp": "2026-03-27T10:49:39.501Z",
+    "processedDates": [
+      {
+        "date": "2026-03-28",
+        "daysBefore": 1,
+        "appointmentsFound": 98,
+        "remindersSent": {
+          "whatsapp": 0,
+          "email": 5,
+          "sms": 91
+        },
+        "_id": "69c660c3399d480eac836568"
+      }
+    ],
+    "totalReminders": 96,
+    "status": "success",
+    "errors": [],
+    "createdAt": "2026-03-27T10:49:39.505Z",
+    "updatedAt": "2026-03-27T10:49:39.505Z",
+    "__v": 0
+  },
+  {
+    "_id": "69c7b2605fb48443e655799f",
+    "id": "LOG-H8IOFJ8ZZ",
+    "timestamp": "2026-03-28T10:50:08.430Z",
+    "processedDates": [
+      {
+        "date": "2026-03-29",
+        "daysBefore": 1,
+        "appointmentsFound": 129,
+        "remindersSent": {
+          "whatsapp": 0,
+          "email": 5,
+          "sms": 123
+        },
+        "_id": "69c7b2605fb48443e65579a0"
+      }
+    ],
+    "totalReminders": 128,
+    "status": "success",
+    "errors": [],
+    "createdAt": "2026-03-28T10:50:08.434Z",
+    "updatedAt": "2026-03-28T10:50:08.434Z",
+    "__v": 0
+  },
+  {
+    "_id": "69c903e6df14e6401063657b",
+    "id": "LOG-MNO1LT2NF",
+    "timestamp": "2026-03-29T10:50:14.604Z",
+    "processedDates": [
+      {
+        "date": "2026-03-30",
+        "daysBefore": 1,
+        "appointmentsFound": 150,
+        "remindersSent": {
+          "whatsapp": 0,
+          "email": 5,
+          "sms": 135
+        },
+        "_id": "69c903e6df14e6401063657c"
+      }
+    ],
+    "totalReminders": 140,
+    "status": "success",
+    "errors": [],
+    "createdAt": "2026-03-29T10:50:14.608Z",
+    "updatedAt": "2026-03-29T10:50:14.608Z",
+    "__v": 0
+  },
+  {
+    "_id": "69ca561807f9ebd6af7e9c9d",
+    "id": "LOG-PMME5GHE4",
+    "timestamp": "2026-03-30T10:53:12.630Z",
+    "processedDates": [
+      {
+        "date": "2026-03-31",
+        "daysBefore": 1,
+        "appointmentsFound": 129,
+        "remindersSent": {
+          "whatsapp": 0,
+          "email": 5,
+          "sms": 121
+        },
+        "_id": "69ca561807f9ebd6af7e9c9e"
+      }
+    ],
+    "totalReminders": 126,
+    "status": "success",
+    "errors": [],
+    "createdAt": "2026-03-30T10:53:12.635Z",
+    "updatedAt": "2026-03-30T10:53:12.635Z",
+    "__v": 0
+  },
+  {
+    "_id": "69cba6fd2f6d217127efaec7",
+    "id": "LOG-I16AS0H6K",
+    "timestamp": "2026-03-31T10:50:37.454Z",
+    "processedDates": [
+      {
+        "date": "2026-04-01",
+        "daysBefore": 1,
+        "appointmentsFound": 140,
+        "remindersSent": {
+          "whatsapp": 0,
+          "email": 5,
+          "sms": 136
+        },
+        "_id": "69cba6fd2f6d217127efaec8"
+      }
+    ],
+    "totalReminders": 141,
+    "status": "success",
+    "errors": [],
+    "createdAt": "2026-03-31T10:50:37.459Z",
+    "updatedAt": "2026-03-31T10:50:37.459Z",
+    "__v": 0
+  },
+  {
+    "_id": "69ccf83fe92c2b64294266e3",
+    "id": "LOG-D72RP3228",
+    "timestamp": "2026-04-01T10:49:35.843Z",
+    "processedDates": [
+      {
+        "date": "2026-04-02",
+        "daysBefore": 1,
+        "appointmentsFound": 83,
+        "remindersSent": {
+          "whatsapp": 0,
+          "email": 5,
+          "sms": 77
+        },
+        "_id": "69ccf83fe92c2b64294266e4"
+      }
+    ],
+    "totalReminders": 82,
+    "status": "success",
+    "errors": [],
+    "createdAt": "2026-04-01T10:49:35.848Z",
+    "updatedAt": "2026-04-01T10:49:35.848Z",
+    "__v": 0
+  },
+  {
+    "_id": "69ce49d2e533005c832dc672",
+    "id": "LOG-KT7HYW1UI",
+    "timestamp": "2026-04-02T10:49:54.143Z",
+    "processedDates": [
+      {
+        "date": "2026-04-03",
+        "daysBefore": 1,
+        "appointmentsFound": 97,
+        "remindersSent": {
+          "whatsapp": 0,
+          "email": 5,
+          "sms": 94
+        },
+        "_id": "69ce49d2e533005c832dc673"
+      }
+    ],
+    "totalReminders": 99,
+    "status": "success",
+    "errors": [],
+    "createdAt": "2026-04-02T10:49:54.147Z",
+    "updatedAt": "2026-04-02T10:49:54.147Z",
+    "__v": 0
+  },
+  {
+    "_id": "69cf8fdcb14183ece9d994b9",
+    "id": "LOG-XIQ2VMGTT",
+    "timestamp": "2026-04-03T10:01:00.577Z",
+    "processedDates": [
+      {
+        "date": "2026-04-04",
+        "daysBefore": 1,
+        "appointmentsFound": 160,
+        "remindersSent": {
+          "whatsapp": 0,
+          "email": 5,
+          "sms": 148
+        },
+        "_id": "69cf8fdcb14183ece9d994ba"
+      }
+    ],
+    "totalReminders": 153,
+    "status": "success",
+    "errors": [],
+    "createdAt": "2026-04-03T10:01:00.581Z",
+    "updatedAt": "2026-04-03T10:01:00.581Z",
+    "__v": 0
+  },
+  {
+    "_id": "69d0e15a9b0890985799b88b",
+    "id": "LOG-XXFOZPF3E",
+    "timestamp": "2026-04-04T10:00:58.901Z",
+    "processedDates": [
+      {
+        "date": "2026-04-05",
+        "daysBefore": 1,
+        "appointmentsFound": 150,
+        "remindersSent": {
+          "whatsapp": 0,
+          "email": 2,
+          "sms": 149
+        },
+        "_id": "69d0e15a9b0890985799b88c"
+      }
+    ],
+    "totalReminders": 151,
+    "status": "success",
+    "errors": [],
+    "createdAt": "2026-04-04T10:00:58.905Z",
+    "updatedAt": "2026-04-04T10:00:58.905Z",
+    "__v": 0
+  },
+  {
+    "_id": "69d232d8e4ea8b82cd5bd6f4",
+    "id": "LOG-J3U5FBRRJ",
+    "timestamp": "2026-04-05T10:00:56.084Z",
+    "processedDates": [
+      {
+        "date": "2026-04-06",
+        "daysBefore": 1,
+        "appointmentsFound": 119,
+        "remindersSent": {
+          "whatsapp": 0,
+          "email": 2,
+          "sms": 111
+        },
+        "_id": "69d232d8e4ea8b82cd5bd6f5"
+      }
+    ],
+    "totalReminders": 113,
+    "status": "success",
+    "errors": [],
+    "createdAt": "2026-04-05T10:00:56.089Z",
+    "updatedAt": "2026-04-05T10:00:56.089Z",
+    "__v": 0
+  },
+  {
+    "_id": "69d384579933c2ce2e4c4a5d",
+    "id": "LOG-ZSN8TLX29",
+    "timestamp": "2026-04-06T10:00:55.127Z",
+    "processedDates": [
+      {
+        "date": "2026-04-07",
+        "daysBefore": 1,
+        "appointmentsFound": 116,
+        "remindersSent": {
+          "whatsapp": 0,
+          "email": 2,
+          "sms": 110
+        },
+        "_id": "69d384579933c2ce2e4c4a5e"
+      }
+    ],
+    "totalReminders": 112,
+    "status": "success",
+    "errors": [],
+    "createdAt": "2026-04-06T10:00:55.132Z",
+    "updatedAt": "2026-04-06T10:00:55.132Z",
+    "__v": 0
+  },
+  {
+    "_id": "69d4d5d523e0cc7139a8b60e",
+    "id": "LOG-0W5JLMG13",
+    "timestamp": "2026-04-07T10:00:53.216Z",
+    "processedDates": [
+      {
+        "date": "2026-04-08",
+        "daysBefore": 1,
+        "appointmentsFound": 93,
+        "remindersSent": {
+          "whatsapp": 0,
+          "email": 2,
+          "sms": 89
+        },
+        "_id": "69d4d5d523e0cc7139a8b60f"
+      }
+    ],
+    "totalReminders": 91,
+    "status": "success",
+    "errors": [],
+    "createdAt": "2026-04-07T10:00:53.221Z",
+    "updatedAt": "2026-04-07T10:00:53.221Z",
+    "__v": 0
+  },
+  {
+    "_id": "69d6275351ef4d2b1a43b5d5",
+    "id": "LOG-9KNPM47V7",
+    "timestamp": "2026-04-08T10:00:51.709Z",
+    "processedDates": [
+      {
+        "date": "2026-04-09",
+        "daysBefore": 1,
+        "appointmentsFound": 82,
+        "remindersSent": {
+          "whatsapp": 0,
+          "email": 2,
+          "sms": 75
+        },
+        "_id": "69d6275351ef4d2b1a43b5d6"
+      }
+    ],
+    "totalReminders": 77,
+    "status": "success",
+    "errors": [],
+    "createdAt": "2026-04-08T10:00:51.713Z",
+    "updatedAt": "2026-04-08T10:00:51.713Z",
+    "__v": 0
+  },
+  {
+    "_id": "69d778b7e85bbf71c9ecafe4",
+    "id": "LOG-GRWE1TVEC",
+    "timestamp": "2026-04-09T10:00:23.137Z",
+    "processedDates": [
+      {
+        "date": "2026-04-10",
+        "daysBefore": 1,
+        "appointmentsFound": 110,
+        "remindersSent": {
+          "whatsapp": 0,
+          "email": 4,
+          "sms": 104
+        },
+        "_id": "69d778b7e85bbf71c9ecafe5"
+      }
+    ],
+    "totalReminders": 108,
+    "status": "success",
+    "errors": [],
+    "createdAt": "2026-04-09T10:00:23.141Z",
+    "updatedAt": "2026-04-09T10:00:23.141Z",
+    "__v": 0
+  }
+]

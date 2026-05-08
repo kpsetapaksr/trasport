@@ -1,0 +1,33 @@
+[
+  {
+    "_id": "69c0f229459a704f6f0170f9",
+    "start_time": "07:00",
+    "end_time": "21:00",
+    "interval_minutes": 30,
+    "buffer_before_appointment": 60,
+    "travel_time_minutes": 30,
+    "max_seats_per_slot": 0,
+    "enabled": true,
+    "message": "",
+    "createdAt": "2026-03-23T07:56:25.647Z",
+    "updatedAt": "2026-03-23T13:09:49.813Z",
+    "__v": 0,
+    "slot_overrides": [
+      {
+        "time": "15:00",
+        "enabled": true,
+        "custom_time": "15:10"
+      },
+      {
+        "time": "15:30",
+        "enabled": false
+      },
+      {
+        "time": "20:30",
+        "enabled": true,
+        "custom_time": "20:20"
+      }
+    ],
+    "appointment_duration_minutes": 30
+  }
+]

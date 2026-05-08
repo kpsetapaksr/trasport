@@ -1,0 +1,12 @@
+[
+  {
+    "_id": "6943ece8958f0604720382b4",
+    "id": "admin-1",
+    "username": "admin",
+    "password": "$2b$12$hXkJ.FAotakhBFY3jLB3geeoyw5QUjnpGGwm/dgWxLUNzRv/KG7tW",
+    "role": "super-admin",
+    "lastLogin": "2025-12-18T12:00:40.144Z",
+    "__v": 0,
+    "failedAttempts": 0
+  }
+]

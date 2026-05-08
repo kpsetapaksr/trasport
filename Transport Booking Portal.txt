@@ -1,0 +1,298 @@
+PROJECT: Transport Booking Portal for Hospital Appointment System
+
+Tech Stack:
+
+* Next.js (App Router)
+* MongoDB
+* Tailwind CSS
+* REST API
+* Node.js backend
+* Authentication using JWT
+* Environment variables for config
+
+Existing System:
+There is already an appointment booking portal built using Next.js and MongoDB where patients book doctor appointments using:
+
+* IC Number
+* Phone Number
+* OTP Verification
+
+Now we want to build a separate Transport Booking Management Portal that connects with the existing appointment system.
+
+Purpose:
+Patients who book appointments can request free transport from the nearest station to the hospital.
+
+IMPORTANT:
+This should be a separate admin portal that manages transport requests coming from the main appointment system.
+
+---
+
+SYSTEM ARCHITECTURE
+
+1. Existing Portal
+   Patient books appointment
+
+2. Transport Portal
+   Manages:
+
+* Transport requests
+* Vehicles
+* Pickup stations
+* Transport scheduling
+
+Appointments should be fetched using API from the existing portal.
+
+---
+
+FEATURES
+
+1. Transport Request Integration
+
+When a patient books an appointment and selects:
+"Need Free Transport"
+
+The appointment system sends a request to the Transport Portal API.
+
+Required fields:
+
+* appointment_id
+* patient_name
+* phone_number
+* pickup_station
+* appointment_date
+* appointment_time
+* transport_required (true/false)
+
+---
+
+2. Transport Admin Portal
+
+Create a secure admin dashboard with login.
+
+Admin Features:
+
+* View transport requests
+* Assign vehicles
+* Update pickup time
+* Confirm transport
+* Cancel transport
+
+Dashboard should show:
+
+Total Requests
+Pending Requests
+Confirmed Transport
+Completed Pickups
+
+---
+
+3. Transport Requests Page
+
+Table view:
+
+Columns:
+
+* Appointment ID
+* Patient Name
+* Phone
+* Pickup Station
+* Appointment Date
+* Pickup Time
+* Status
+* Assigned Vehicle
+
+Actions:
+
+* Assign Vehicle
+* Edit Pickup Time
+* Confirm Transport
+* Cancel Request
+
+---
+
+4. Vehicle Management
+
+Admin can manage hospital vehicles.
+
+Fields:
+
+* vehicle_name
+* vehicle_number
+* vehicle_type (Car / Van / Bus)
+* seat_capacity
+* driver_name
+* driver_phone
+* status (active / maintenance)
+
+CRUD operations required.
+
+---
+
+5. Pickup Station Management
+
+Admin can add stations.
+
+Fields:
+
+* station_name
+* location_name
+* latitude
+* longitude
+* status
+
+Examples:
+
+* Chennai Central
+* Egmore
+* Chennai Airport
+* Koyambedu Bus Stand
+
+---
+
+6. Transport Scheduling
+
+Admin assigns vehicle and pickup time.
+
+Fields:
+
+* request_id
+* vehicle_id
+* pickup_time
+* driver_name
+* driver_phone
+* status
+
+Status values:
+
+* pending
+* confirmed
+* completed
+* cancelled
+
+---
+
+7. MongoDB Collections
+
+Create collections:
+
+transport_requests
+vehicles
+pickup_stations
+transport_schedule
+
+Example transport_requests schema:
+
+{
+appointment_id: String,
+patient_name: String,
+phone_number: String,
+pickup_station: String,
+appointment_date: Date,
+pickup_time: String,
+vehicle_id: ObjectId,
+status: String,
+created_at: Date
+}
+
+---
+
+8. API Endpoints
+
+POST /api/transport/request
+Create transport request
+
+GET /api/transport/requests
+List transport requests
+
+PUT /api/transport/assign
+Assign vehicle and pickup time
+
+DELETE /api/transport/cancel
+
+GET /api/vehicles
+POST /api/vehicles
+PUT /api/vehicles
+DELETE /api/vehicles
+
+GET /api/stations
+POST /api/stations
+
+---
+
+9. UI Requirements
+
+Use Tailwind CSS.
+
+Pages:
+
+/login
+/dashboard
+/transport-requests
+/vehicles
+/pickup-stations
+/settings
+
+Tables must include:
+
+* search
+* pagination
+* filters
+
+---
+
+10. Code Requirements
+
+Use:
+Next.js App Router
+Server Actions where possible
+MongoDB with Mongoose
+Clean folder structure
+
+Example:
+
+/app
+/components
+/lib
+/models
+/api
+/pages
+
+---
+
+11. Security
+
+* Admin authentication
+* JWT token validation
+* API protection middleware
+
+---
+
+12. Extra Features (Optional)
+
+* SMS notification to patient
+* WhatsApp notification
+* Export transport list (CSV)
+* Daily transport report
+
+---
+
+OUTPUT REQUIRED
+
+Generate a complete project including:
+
+* Folder structure
+* MongoDB schemas
+* API routes
+* Admin UI pages
+* Components
+* Example integration API from appointment portal
+
+The code must be production-ready and modular.
+
+
+
+reference : E:\xmapp\htdocs\Clinical-main, -- it is appointment booking  
+
+mongodb : https://cloud.mongodb.com/v2/69bd1a20bf614a64eef26b6a#/explorer/69bd1a58a43dd94f0029421a/clinical 
+ 
+create new tables for Transport Booking Portal

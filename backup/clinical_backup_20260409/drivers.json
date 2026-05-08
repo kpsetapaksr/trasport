@@ -1,0 +1,35 @@
+[
+  {
+    "_id": "69cb7921fec65213438e9f35",
+    "name": "Captain Naveen",
+    "phone": "0152456525",
+    "password": "driver",
+    "isActive": true,
+    "createdAt": "2026-03-31T07:34:57.884Z",
+    "updatedAt": "2026-04-08T05:31:42.597Z",
+    "__v": 0,
+    "image": "/uploads/drivers/upload-1775626301358.jpg"
+  },
+  {
+    "_id": "69cb7957fec65213438e9f41",
+    "name": "Captain Kumar",
+    "phone": "1752564525",
+    "password": "driver",
+    "isActive": true,
+    "createdAt": "2026-03-31T07:35:51.111Z",
+    "updatedAt": "2026-04-08T05:31:30.734Z",
+    "__v": 0,
+    "image": "/uploads/drivers/upload-1775626287473.png"
+  },
+  {
+    "_id": "69cba7de5429d54c5f04d665",
+    "name": "Sebastian",
+    "phone": "98432545279",
+    "password": "Stallioni@279",
+    "isActive": true,
+    "createdAt": "2026-03-31T10:54:22.534Z",
+    "updatedAt": "2026-03-31T12:57:23.230Z",
+    "__v": 0,
+    "image": "/uploads/drivers/upload-1774959256798.jpg"
+  }
+]

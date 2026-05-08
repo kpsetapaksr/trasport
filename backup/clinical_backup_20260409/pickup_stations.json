@@ -1,0 +1,24 @@
+[
+  {
+    "_id": "69c784ff527fe5354d2f4050",
+    "station_name": "KP SETAPAK SRI RAMPAI",
+    "location_name": "KLINIK",
+    "status": "active",
+    "createdAt": "2026-03-28T07:36:31.106Z",
+    "updatedAt": "2026-04-08T07:00:30.110Z",
+    "__v": 0,
+    "latitude": 3.1987711,
+    "longitude": 101.7282222
+  },
+  {
+    "_id": "69c78518527fe5354d2f4053",
+    "station_name": "LRT SRI RAMPAI",
+    "location_name": "LRT STATION",
+    "status": "active",
+    "createdAt": "2026-03-28T07:36:56.769Z",
+    "updatedAt": "2026-04-08T07:00:06.938Z",
+    "__v": 0,
+    "latitude": 3.1987444,
+    "longitude": 101.7359471
+  }
+]
