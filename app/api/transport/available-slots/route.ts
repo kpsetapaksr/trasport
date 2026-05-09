@@ -135,8 +135,11 @@ export async function GET(request: NextRequest) {
     );
 
     const scheduleSlots = allScheduleSlots.filter((s: any) => {
-      // Allow all slots that are not explicitly cancelled/deleted
-      if (s.status === 'deleted') return false;
+      if (s.status !== 'active') return false;
+      if (!s.date || s.date === '') {
+        const key = `${(s.vehicle_id as any)?._id || s.vehicle_id}|${s.time}|${s.station_name}`;
+        if (inactiveOverrides.has(key)) return false;
+      }
       return true;
     });
 
@@ -217,7 +220,7 @@ export async function GET(request: NextRequest) {
 
     for (const slot of scheduleSlots) {
       const v = slot.vehicle_id as any;
-      if (!v) continue; // skip if vehicle is missing
+      if (!v || v.status !== 'active') continue; // skip inactive vehicles
 
       const driverId = v.driver_id ? String(v.driver_id) : null;
       // Skip vehicles whose driver is on leave or fully blocked for the day
@@ -341,10 +344,7 @@ export async function GET(request: NextRequest) {
         }
       }
 
-      // Fallback: If filtered list is empty, show all slots for that date
-      if (filteredSlots.length === 0 && allSlotTimes.length > 0) {
-        filteredSlots = allSlotTimes;
-      }
+      // (Removed aggressive fallback to ensure only valid times are shown)
 
       // Limit to 3 slots: recommended + 2 before (pickup) or 2 after (drop)
       if (recommendedTime && filteredSlots.length > 3) {
