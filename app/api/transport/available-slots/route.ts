@@ -114,14 +114,13 @@ export async function GET(request: NextRequest) {
       type: serviceType,
     };
     if (station) {
-      // Clean and handle potential "Station Name - Location" format
-      const escapedFull = station.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+      // Maximum leniency: trim and use a "contains" match for the base name
       const baseName = station.split(' - ')[0].trim();
       const escapedBase = baseName.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
       
-      // Match either the full name or the base name to be flexible
+      // Use a partial match (no ^ or $) to be as resilient as possible
       slotFilter.station_name = { 
-        $regex: new RegExp(`^${escapedFull}$|^${escapedBase}$`, 'i') 
+        $regex: new RegExp(escapedBase, 'i') 
       };
     }
     const allScheduleSlots = await VehicleScheduleSlot.find(slotFilter)
