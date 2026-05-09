@@ -323,12 +323,11 @@ export async function GET(request: NextRequest) {
           }
         }
       } else {
-        // PICKUP: pickup_time + travel_time <= appointment_time
-        const latestPickupMinutes = aptMinutes - travelTime;
-
+        // PICKUP: Any slot strictly before the appointment time is valid
+        // We still use travelTime for the "Recommended" calculation, but not for hiding slots.
         filteredSlots = allSlotTimes.filter((slot) => {
           const slotMinutes = timeToMinutes(slot);
-          return slotMinutes <= latestPickupMinutes;
+          return slotMinutes < aptMinutes;
         });
 
         const idealPickupMinutes = aptMinutes - travelTime - Math.floor(buffer / 2);
