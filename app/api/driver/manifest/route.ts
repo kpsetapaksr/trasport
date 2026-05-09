@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server';
 import dbConnect from '@/lib/db';
 import { TransportRequest, Vehicle } from '@/lib/models';
+import { getClinicalModels } from '@/lib/clinical-models';
 
 export async function GET(request: NextRequest) {
   try {
@@ -36,7 +37,7 @@ export async function GET(request: NextRequest) {
     dayEnd.setUTCHours(23,59,59,999);
 
     // Find all requests for these vehicles on the target date
-    const manifest = await TransportRequest.find({
+    const manifestRaw = await TransportRequest.find({
       appointment_date: { $gte: dayStart, $lte: dayEnd },
       $or: [
         { vehicle_id: { $in: vehicleIds } },
@@ -46,6 +47,70 @@ export async function GET(request: NextRequest) {
     })
     .sort({ pickup_time: 1, dropoff_time: 1 })
     .lean();
+
+    // Enrich with fallback phone from Appointment if missing
+    const { Appointment } = await getClinicalModels();
+    const manifest = await Promise.all(manifestRaw.map(async (trip: any) => {
+      let phoneNumber = trip.phone_number;
+
+      // If phone_number is missing or just "null"/empty, try to find it
+      if (!phoneNumber || phoneNumber === 'null' || phoneNumber === '') {
+        // 1. Try by appointment_id
+        if (trip.appointment_id) {
+          const appt = await Appointment.findOne({ id: trip.appointment_id }).lean();
+          if (appt?.patientPhone) {
+            phoneNumber = appt.patientPhone;
+          }
+        }
+
+        // 2. Fallback to IC + Date if still no phone
+        if ((!phoneNumber || phoneNumber === 'null' || phoneNumber === '') && trip.ic_number) {
+          const d = new Date(trip.appointment_date);
+          const dStr = d.toISOString().split('T')[0]; 
+          const localStr = `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`;
+          
+          // Clean IC for regex
+          const cleanedIC = trip.ic_number.replace(/[-\s]/g, '').trim().replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+          const dashIC = cleanedIC.length === 12
+            ? `${cleanedIC.slice(0, 6)}-${cleanedIC.slice(6, 8)}-${cleanedIC.slice(8)}`
+            : cleanedIC;
+
+          const appt = await Appointment.findOne({ 
+            $or: [
+              { patientIC: { $regex: new RegExp(`^${cleanedIC}$`, 'i') } },
+              { patientIC: { $regex: new RegExp(`^${dashIC}$`, 'i') } }
+            ],
+            appointmentDate: { $in: [dStr, localStr] }
+          }).lean();
+          
+          if (appt?.patientPhone) {
+            phoneNumber = appt.patientPhone;
+          }
+        }
+
+        // 3. Last resort: search by IC regardless of date (get most recent)
+        if ((!phoneNumber || phoneNumber === 'null' || phoneNumber === '') && trip.ic_number) {
+          const cleanedIC = trip.ic_number.replace(/[-\s]/g, '').trim().replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+          const dashIC = cleanedIC.length === 12
+            ? `${cleanedIC.slice(0, 6)}-${cleanedIC.slice(6, 8)}-${cleanedIC.slice(8)}`
+            : cleanedIC;
+
+          const anyAppt = await Appointment.findOne({ 
+            $or: [
+              { patientIC: { $regex: new RegExp(`^${cleanedIC}$`, 'i') } },
+              { patientIC: { $regex: new RegExp(`^${dashIC}$`, 'i') } }
+            ],
+            patientPhone: { $exists: true, $ne: '' }
+          }).sort({ appointmentDate: -1 }).lean();
+          
+          if (anyAppt?.patientPhone) {
+            phoneNumber = anyAppt.patientPhone;
+          }
+        }
+      }
+
+      return { ...trip, phone_number: phoneNumber };
+    }));
 
     return NextResponse.json({
       data: manifest,

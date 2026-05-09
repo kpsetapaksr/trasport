@@ -389,22 +389,40 @@ export default function DriverOpsConsole() {
               const tripNotConfirmed = trip.status === 'pending'
 
               return (
-                <Card key={trip._id} className="rounded-[3rem] border-none shadow-xl shadow-slate-200/50 hover:shadow-2xl transition-all overflow-hidden flex flex-col">
-                  <div className="p-8 flex-1 space-y-5">
+                <Card key={trip._id} className="rounded-[2.5rem] sm:rounded-[3rem] border-none shadow-xl shadow-slate-200/50 hover:shadow-2xl transition-all overflow-hidden flex flex-col">
+                  <div className="p-6 sm:p-8 flex-1 space-y-5">
 
                     {/* Patient Info */}
-                    <div className="flex items-start justify-between gap-3">
-                      <div className="space-y-1 flex-1 min-w-0">
-                        <h4 className="text-xl font-black text-slate-800 tracking-tighter italic leading-tight">{trip.patient_name}</h4>
-                        {trip.seats && trip.seats > 1 && (
-                          <div className="flex flex-wrap items-center gap-3 mt-1">
-                            <span className="text-[10px] font-bold text-slate-400 bg-slate-50 px-2 py-0.5 rounded-lg">{trip.seats} seats</span>
-                          </div>
-                        )}
+                    <div className="flex items-start justify-between gap-4">
+                      <div className="space-y-2 flex-1 min-w-0">
+                        <h4 className="text-lg sm:text-xl font-black text-slate-800 tracking-tighter italic leading-tight truncate">{trip.patient_name}</h4>
+                        
+                        <div className="flex flex-wrap items-center gap-2">
+                          {trip.phone_number && trip.phone_number !== 'null' && trip.phone_number !== '' ? (
+                            <a 
+                              href={`tel:${trip.phone_number.replace(/\D/g, '')}`}
+                              className="flex items-center gap-2 px-5 py-3 bg-blue-600 text-white rounded-2xl shadow-lg shadow-blue-200 active:scale-95 transition-all group"
+                              onClick={(e) => e.stopPropagation()}
+                            >
+                              <Phone className="w-4 h-4 fill-current group-hover:animate-bounce" />
+                              <span className="text-xs font-black tracking-tight">{trip.phone_number}</span>
+                            </a>
+                          ) : (
+                            <div className="flex items-center gap-2 px-5 py-3 bg-slate-100 text-slate-400 rounded-2xl">
+                              <Phone className="w-4 h-4" />
+                              <span className="text-xs font-black tracking-tight">No Phone</span>
+                            </div>
+                          )}
+                          
+                          {trip.seats && trip.seats > 1 && (
+                            <span className="px-4 py-2.5 bg-slate-900 text-white text-[10px] font-black uppercase tracking-widest rounded-[1.2rem]">
+                              {trip.seats} Pax
+                            </span>
+                          )}
+                        </div>
                       </div>
 
-                      {/* Status badge + action dropdown */}
-                      <div className="flex items-center gap-1 shrink-0">
+                      <div className="flex flex-col items-end gap-2 shrink-0">
                         <Badge className={`uppercase text-[9px] font-black px-3 py-1.5 rounded-xl border-none shadow-none tracking-widest ${
                           trip.status === 'completed' ? 'bg-emerald-50 text-emerald-600' :
                           trip.status === 'cancelled' ? 'bg-red-50 text-red-500' :
@@ -413,14 +431,14 @@ export default function DriverOpsConsole() {
                           {trip.status}
                         </Badge>
                         <Select onValueChange={(v) => handleStatusUpdate(trip._id, v)}>
-                          <SelectTrigger className="h-8 w-8 p-0 border-none bg-transparent hover:bg-slate-100 rounded-xl outline-none ring-0 focus:ring-0">
-                            <MoreHorizontal className="w-3.5 h-3.5 text-slate-400 mx-auto" />
+                          <SelectTrigger className="h-10 w-10 p-0 border-none bg-slate-50 hover:bg-slate-100 rounded-xl transition-all">
+                            <MoreHorizontal className="w-4 h-4 text-slate-400 mx-auto" />
                           </SelectTrigger>
                           <SelectContent align="end">
-                            <SelectItem value="confirmed">Confirm All</SelectItem>
+                            <SelectItem value="confirmed">Confirm Trip</SelectItem>
                             <SelectItem value="completed">Finish Trip</SelectItem>
                             <SelectItem value="cancelled">Abort Trip</SelectItem>
-                            <SelectItem value="pending">Back to Pool</SelectItem>
+                            <SelectItem value="pending">Set Pending</SelectItem>
                           </SelectContent>
                         </Select>
                       </div>
