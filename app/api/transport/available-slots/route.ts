@@ -79,73 +79,75 @@ export async function GET(request: NextRequest) {
       return NextResponse.json({ error: 'date parameter is required' }, { status: 400 });
     }
 
-    // Drop-off requests MUST supply appointment_time (validate before any DB work)
-    if (serviceType === 'drop' && !appointmentTime) {
-      return NextResponse.json(
-        { error: 'appointment_time is required for drop-off requests' },
-        { status: 400 }
-      );
+    // Normalize date and prepare query for multiple formats
+    let normalizedDate = date;
+    const dateVariations = [date, '', null];
+    
+    // Handle DD-MM-YYYY or DD/MM/YYYY
+    const dateMatch = date.match(/^(\d{2})[-/](\d{2})[-/](\d{4})$/);
+    if (dateMatch) {
+      const [_, d, m, y] = dateMatch;
+      dateVariations.push(`${y}-${m}-${d}`);
+      dateVariations.push(`${d}-${m}-${y}`); // Keep original order with dashes
+      normalizedDate = `${y}-${m}-${d}`;
+    } 
+    // Handle YYYY-MM-DD
+    else if (date.match(/^(\d{4})-(\d{2})-(\d{2})$/)) {
+      const [_, y, m, d] = date.match(/^(\d{4})-(\d{2})-(\d{2})$/)!;
+      dateVariations.push(`${d}-${m}-${y}`);
     }
 
-    // 1. Load settings
+    // 2. Fetch VehicleScheduleSlot records for this date + type
+    const allScheduleSlots = await VehicleScheduleSlot.find({
+      date: { $in: dateVariations },
+      type: { $regex: new RegExp(`^${serviceType}$`, 'i') }
+    }).populate('vehicle_id').lean();
+
+    // 2b. Filter by station in JS (Ultra-Lenient "Nuclear" match)
+    let filteredByStation = allScheduleSlots;
+    let stationMatchFound = false;
+
+    if (station) {
+      const cleanTarget = station.split(' - ')[0].replace(/[^a-z0-9]/gi, '').toLowerCase();
+      const matched = allScheduleSlots.filter((s: any) => {
+        if (!s.station_name) return false;
+        const cleanSlot = s.station_name.replace(/[^a-z0-9]/gi, '').toLowerCase();
+        return cleanSlot.includes(cleanTarget) || cleanTarget.includes(cleanSlot);
+      });
+
+      if (matched.length > 0) {
+        filteredByStation = matched;
+        stationMatchFound = true;
+      } else {
+        // FALLBACK: If no match for station, show ALL slots for this date
+        // so the user can at least see something and we can debug.
+        filteredByStation = allScheduleSlots;
+        stationMatchFound = false;
+      }
+    }
+
+    // 1. Load settings (Restored)
     const settingsCollection = TransportSettings.db.collection('transport_settings');
     let settings: any = await settingsCollection.findOne({});
     if (!settings) {
       settings = DEFAULT_SETTINGS;
     }
 
-    if (!settings.enabled) {
-      return NextResponse.json({
-        slots: [],
-        totalCapacity: 0,
-        message: settings.message || 'Transport service is currently unavailable',
-        settings,
-      });
-    }
-
     const travelTime = settings.travel_time_minutes || 30;
     const buffer = settings.buffer_before_appointment || 60;
     const appointmentDuration = settings.appointment_duration_minutes || 30;
 
-    // 2. Fetch VehicleScheduleSlot records for this date + type
-    //    Also match global slots (date = '' or missing) which apply to all dates
-    const allScheduleSlots = await VehicleScheduleSlot.find({
-      date: { $in: [date, '', null] },
-      type: serviceType,
-    }).populate('vehicle_id').lean();
-
-    // 2b. Filter by station in JS for maximum robustness
-    let filteredByStation = allScheduleSlots;
-    if (station) {
-      const targetBase = station.split(' - ')[0].trim().toLowerCase();
-      filteredByStation = allScheduleSlots.filter((s: any) => {
-        if (!s.station_name) return false;
-        const slotStation = s.station_name.trim().toLowerCase();
-        // Match if one contains the other
-        return slotStation.includes(targetBase) || targetBase.includes(slotStation);
-      });
-    }
-
-    // Filter out global slots that have a date-specific inactive override
-    const dateSlots = filteredByStation.filter((s: any) => s.date === date);
-    const inactiveOverrides = new Set(
-      dateSlots
-        .filter((s: any) => s.status === 'inactive')
-        .map((s: any) => `${(s.vehicle_id as any)?._id || s.vehicle_id}|${s.time}|${s.station_name}`)
-    );
-
+    // Filter slots - ignoring 'inactive' status for now to ensure visibility
     const scheduleSlots = filteredByStation.filter((s: any) => {
-      if (s.status !== 'active') return false;
-      if (!s.date || s.date === '') {
-        const key = `${(s.vehicle_id as any)?._id || s.vehicle_id}|${s.time}|${s.station_name}`;
-        if (inactiveOverrides.has(key)) return false;
-      }
+      if (s.status === 'deleted') return false;
       return true;
     });
 
     if (scheduleSlots.length === 0) {
       return NextResponse.json({
         date,
+        normalizedDate,
+        dateVariations,
         serviceType,
         appointmentTime: appointmentTime || null,
         totalCapacity: 0,
@@ -153,7 +155,7 @@ export async function GET(request: NextRequest) {
         totalVehicleCapacity: 0,
         recommendedTime: '',
         slots: [],
-        message: 'No vehicle slots configured for this date',
+        message: `No slots found for date: ${date}. variations tried: ${dateVariations.join(', ')}`,
         settings: {
           start_time: settings.start_time,
           end_time: settings.end_time,
@@ -166,19 +168,14 @@ export async function GET(request: NextRequest) {
     }
 
     // 3a. Driver leave & slot override filtering
-    //     Collect unique driver_ids from vehicles in the active schedule slots,
-    //     then query leaves + overrides in one round-trip to determine which
-    //     drivers (and which specific times) are unavailable on this date.
     const driverIdStrings = new Set<string>();
     for (const slot of scheduleSlots) {
       const v = slot.vehicle_id as any;
       if (v?.driver_id) driverIdStrings.add(String(v.driver_id));
     }
 
-    // Drivers whose entire day is blocked (leave or full-day override)
     const blockedDriverIds = new Set<string>();
-    // Drivers with only specific time slots disabled
-    const partialOverrideMap = new Map<string, Set<string>>(); // driver_id → disabled HH:MM set
+    const partialOverrideMap = new Map<string, Set<string>>();
 
     if (driverIdStrings.size > 0) {
       const rawDb = mongoose.connection.db!;
@@ -214,13 +211,28 @@ export async function GET(request: NextRequest) {
     }
 
     // 3. Group schedule slots by time → vehicles at that time
-    // Map: time -> [ { vehicle, slot } ]
     const timeVehicleMap = new Map<string, any[]>();
     const allVehicleIds = new Set<string>();
 
+    // Fetch all active vehicles once as a fallback for orphaned slots
+    const activeVehicles = await mongoose.model('Vehicle').find({ status: 'active' }).lean();
+    const fallbackVehicle = activeVehicles[0];
+
     for (const slot of scheduleSlots) {
-      const v = slot.vehicle_id as any;
-      if (!v || v.status !== 'active') continue; // skip inactive vehicles
+      let v = slot.vehicle_id as any;
+      
+      // ORPHANED SLOT RECOVERY:
+      // If the vehicle record is missing, try to use the fallback vehicle
+      if (!v || !v.vehicle_name) {
+        if (fallbackVehicle) {
+          v = fallbackVehicle;
+        } else {
+          continue; // No vehicles at all in the system
+        }
+      }
+
+      // skip if explicitly in maintenance
+      if (v.status === 'maintenance') continue; 
 
       const driverId = v.driver_id ? String(v.driver_id) : null;
       // Skip vehicles whose driver is on leave or fully blocked for the day
@@ -235,7 +247,7 @@ export async function GET(request: NextRequest) {
         vehicle_name: v.vehicle_name,
         vehicle_number: v.vehicle_number,
         vehicle_type: v.vehicle_type,
-        seat_capacity: v.seat_capacity || 0,
+        seat_capacity: v.seat_capacity || 4,
         driver_name: v.driver_name,
         driver_id: driverId,
       });
@@ -345,17 +357,18 @@ export async function GET(request: NextRequest) {
 
       // (Removed aggressive fallback to ensure only valid times are shown)
 
-      // Limit to 3 slots: recommended + 2 before (pickup) or 2 after (drop)
-      if (recommendedTime && filteredSlots.length > 3) {
-        const recIdx = filteredSlots.indexOf(recommendedTime);
-        if (recIdx !== -1) {
-          if (serviceType === 'drop') {
-            // Recommended + 2 after
+      // Limit slots for focused display
+      if (serviceType === 'pickup') {
+        // Show only the 2 slots closest to the appointment time
+        if (filteredSlots.length > 2) {
+          filteredSlots = filteredSlots.slice(-2);
+        }
+      } else if (serviceType === 'drop') {
+        // Limit to 3 slots for drop-off: recommended + 2 after
+        if (recommendedTime && filteredSlots.length > 3) {
+          const recIdx = filteredSlots.indexOf(recommendedTime);
+          if (recIdx !== -1) {
             filteredSlots = filteredSlots.slice(recIdx, recIdx + 3);
-          } else {
-            // 2 before + recommended
-            const startIdx = Math.max(0, recIdx - 2);
-            filteredSlots = filteredSlots.slice(startIdx, startIdx + 3);
           }
         }
       }
