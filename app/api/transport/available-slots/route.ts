@@ -114,9 +114,15 @@ export async function GET(request: NextRequest) {
       type: serviceType,
     };
     if (station) {
-      // Case-insensitive match so "LRT Sri Rampai" and "LRT SRI RAMPAI" both work
-      const escaped = station.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-      slotFilter.station_name = { $regex: new RegExp(`^${escaped}$`, 'i') };
+      // Clean and handle potential "Station Name - Location" format
+      const escapedFull = station.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+      const baseName = station.split(' - ')[0].trim();
+      const escapedBase = baseName.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+      
+      // Match either the full name or the base name to be flexible
+      slotFilter.station_name = { 
+        $regex: new RegExp(`^${escapedFull}$|^${escapedBase}$`, 'i') 
+      };
     }
     const allScheduleSlots = await VehicleScheduleSlot.find(slotFilter)
       .populate('vehicle_id').lean();
