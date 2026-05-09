@@ -57,7 +57,7 @@ export async function GET(request: NextRequest) {
       if (!phoneNumber || phoneNumber === 'null' || phoneNumber === '') {
         // 1. Try by appointment_id
         if (trip.appointment_id) {
-          const appt = await Appointment.findOne({ id: trip.appointment_id }).lean();
+          const appt = (await Appointment.findOne({ id: trip.appointment_id }).lean()) as any;
           if (appt?.patientPhone) {
             phoneNumber = appt.patientPhone;
           }
@@ -75,13 +75,13 @@ export async function GET(request: NextRequest) {
             ? `${cleanedIC.slice(0, 6)}-${cleanedIC.slice(6, 8)}-${cleanedIC.slice(8)}`
             : cleanedIC;
 
-          const appt = await Appointment.findOne({ 
+          const appt = (await Appointment.findOne({ 
             $or: [
               { patientIC: { $regex: new RegExp(`^${cleanedIC}$`, 'i') } },
               { patientIC: { $regex: new RegExp(`^${dashIC}$`, 'i') } }
             ],
             appointmentDate: { $in: [dStr, localStr] }
-          }).lean();
+          }).lean()) as any;
           
           if (appt?.patientPhone) {
             phoneNumber = appt.patientPhone;
@@ -95,13 +95,13 @@ export async function GET(request: NextRequest) {
             ? `${cleanedIC.slice(0, 6)}-${cleanedIC.slice(6, 8)}-${cleanedIC.slice(8)}`
             : cleanedIC;
 
-          const anyAppt = await Appointment.findOne({ 
+          const anyAppt = (await Appointment.findOne({ 
             $or: [
               { patientIC: { $regex: new RegExp(`^${cleanedIC}$`, 'i') } },
               { patientIC: { $regex: new RegExp(`^${dashIC}$`, 'i') } }
             ],
             patientPhone: { $exists: true, $ne: '' }
-          }).sort({ appointmentDate: -1 }).lean();
+          }).sort({ appointmentDate: -1 }).lean()) as any;
           
           if (anyAppt?.patientPhone) {
             phoneNumber = anyAppt.patientPhone;
