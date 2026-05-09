@@ -109,32 +109,32 @@ export async function GET(request: NextRequest) {
 
     // 2. Fetch VehicleScheduleSlot records for this date + type
     //    Also match global slots (date = '' or missing) which apply to all dates
-    const slotFilter: any = {
+    const allScheduleSlots = await VehicleScheduleSlot.find({
       date: { $in: [date, '', null] },
       type: serviceType,
-    };
+    }).populate('vehicle_id').lean();
+
+    // 2b. Filter by station in JS for maximum robustness
+    let filteredByStation = allScheduleSlots;
     if (station) {
-      // Maximum leniency: trim and use a "contains" match for the base name
-      const baseName = station.split(' - ')[0].trim();
-      const escapedBase = baseName.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-      
-      // Use a partial match (no ^ or $) to be as resilient as possible
-      slotFilter.station_name = { 
-        $regex: new RegExp(escapedBase, 'i') 
-      };
+      const targetBase = station.split(' - ')[0].trim().toLowerCase();
+      filteredByStation = allScheduleSlots.filter((s: any) => {
+        if (!s.station_name) return false;
+        const slotStation = s.station_name.trim().toLowerCase();
+        // Match if one contains the other
+        return slotStation.includes(targetBase) || targetBase.includes(slotStation);
+      });
     }
-    const allScheduleSlots = await VehicleScheduleSlot.find(slotFilter)
-      .populate('vehicle_id').lean();
 
     // Filter out global slots that have a date-specific inactive override
-    const dateSlots = allScheduleSlots.filter((s: any) => s.date === date);
+    const dateSlots = filteredByStation.filter((s: any) => s.date === date);
     const inactiveOverrides = new Set(
       dateSlots
         .filter((s: any) => s.status === 'inactive')
         .map((s: any) => `${(s.vehicle_id as any)?._id || s.vehicle_id}|${s.time}|${s.station_name}`)
     );
 
-    const scheduleSlots = allScheduleSlots.filter((s: any) => {
+    const scheduleSlots = filteredByStation.filter((s: any) => {
       if (s.status !== 'active') return false;
       if (!s.date || s.date === '') {
         const key = `${(s.vehicle_id as any)?._id || s.vehicle_id}|${s.time}|${s.station_name}`;
