@@ -12,42 +12,13 @@ export async function GET(request: NextRequest) {
 
     const filter: any = {};
     if (vehicle_id) filter.vehicle_id = vehicle_id;
-    if (date) {
-      // Return date-specific slots AND general (no-date) slots
-      filter.$or = [{ date }, { date: '' }];
-    }
+    // Slots are date-scoped: only return slots for the exact requested date.
+    if (date) filter.date = date;
 
     const slots = await VehicleScheduleSlot.find(filter)
       .populate('vehicle_id')
       .sort({ time: 1 })
       .lean();
-
-    if (date) {
-      const dateSlots = slots.filter((s: any) => s.date === date);
-
-      // Any date-specific slot (active or blocked) overrides its recurring counterpart
-      const dateSpecificKeys = new Set(
-        dateSlots.map((s: any) => `${s.vehicle_id?._id || s.vehicle_id}|${s.type}|${s.time}|${s.station_name}`)
-      );
-
-      const filtered = slots.filter((s: any) => {
-        // Always return date-specific slots (active AND blocked/inactive) so admin sees them
-        if (s.date === date) return true;
-
-        // For recurring (global) slots:
-        if (!s.date || s.date === '') {
-          // Skip inactive recurring slots
-          if (s.status === 'inactive') return false;
-          // Skip if a date-specific slot already covers this time/station/type
-          const key = `${s.vehicle_id?._id || s.vehicle_id}|${s.type}|${s.time}|${s.station_name}`;
-          if (dateSpecificKeys.has(key)) return false;
-        }
-
-        return true;
-      });
-
-      return NextResponse.json({ data: filtered });
-    }
 
     return NextResponse.json({ data: slots });
   } catch (error: any) {
@@ -152,11 +123,43 @@ export async function POST(request: NextRequest) {
       return NextResponse.json({ error: 'start_time must be before end_time' }, { status: 400 });
     }
 
+    // Resolve the list of target dates. Slots are always date-scoped:
+    //   - month: 'YYYY-MM'  → every day in that month (optionally skipping weekends)
+    //   - date:  'YYYY-MM-DD' → that single day
+    const { date, month, skip_weekends } = body;
+    let targetDates: string[];
+    if (month) {
+      const mm = String(month).match(/^(\d{4})-(\d{2})$/);
+      if (!mm) {
+        return NextResponse.json({ error: 'month must be in YYYY-MM format' }, { status: 400 });
+      }
+      const year = parseInt(mm[1]);
+      const monthNum = parseInt(mm[2]);
+      if (monthNum < 1 || monthNum > 12) {
+        return NextResponse.json({ error: 'month must be between 01 and 12' }, { status: 400 });
+      }
+      const daysInMonth = new Date(year, monthNum, 0).getDate();
+      targetDates = [];
+      for (let d = 1; d <= daysInMonth; d++) {
+        const dow = new Date(year, monthNum - 1, d).getDay(); // 0=Sun … 6=Sat
+        if (skip_weekends && (dow === 0 || dow === 6)) continue;
+        targetDates.push(`${mm[1]}-${mm[2]}-${String(d).padStart(2, '0')}`);
+      }
+    } else if (date) {
+      targetDates = [date];
+    } else {
+      return NextResponse.json({ error: 'date (YYYY-MM-DD) or month (YYYY-MM) is required' }, { status: 400 });
+    }
+
+    if (targetDates.length === 0) {
+      return NextResponse.json({ error: 'No target dates to generate (every day was skipped)' }, { status: 400 });
+    }
+
     const slotsToCreate: any[] = [];
 
     if (type === 'both') {
       // ============================================================
-      // BOTH mode — Round-trip logic (general schedule, no date)
+      // BOTH mode — Round-trip logic (date-scoped: one set of slots per target date)
       //
       // Real-world flow for ONE vehicle:
       //   07:00  PICKUP @ Station   → loads patients, drives to hospital
@@ -181,82 +184,59 @@ export async function POST(request: NextRequest) {
       }
       const travelMin = parseInt(travel_time) || 30;
 
-      for (let m = startMin; m < endMin; m += interval) {
-        // PICKUP slot — vehicle is at STATION at this time
-        slotsToCreate.push({
-          vehicle_id,
-          station_name: pickup_station,
-          type: 'pickup',
-          date: '',
-          time: formatTime(m),
-          status: 'active',
-        });
+      for (const d of targetDates) {
+        for (let m = startMin; m < endMin; m += interval) {
+          // PICKUP slot — vehicle is at STATION at this time
+          slotsToCreate.push({
+            vehicle_id,
+            station_name: pickup_station,
+            type: 'pickup',
+            date: d,
+            time: formatTime(m),
+            status: 'active',
+          });
 
-        // DROP slot — vehicle arrives at HOSPITAL after travel
-        const dropTime = m + travelMin;
-        if (dropTime >= 24 * 60) continue; // skip slots that overflow past midnight
-        slotsToCreate.push({
-          vehicle_id,
-          station_name: drop_station,
-          type: 'drop',
-          date: '',
-          time: formatTime(dropTime),
-          status: 'active',
-        });
+          // DROP slot — vehicle arrives at HOSPITAL after travel
+          const dropTime = m + travelMin;
+          if (dropTime >= 24 * 60) continue; // skip slots that overflow past midnight
+          slotsToCreate.push({
+            vehicle_id,
+            station_name: drop_station,
+            type: 'drop',
+            date: d,
+            time: formatTime(dropTime),
+            status: 'active',
+          });
+        }
       }
 
-      // Remove existing general slots for this vehicle before creating new
-      await VehicleScheduleSlot.deleteMany({ vehicle_id, date: '' });
-
-      // Clean up stale date-specific inactive overrides for this vehicle
-      // that no longer match any of the new global slot times
-      const newPickupTimes = new Set(
-        slotsToCreate.filter((s: any) => s.type === 'pickup').map((s: any) => s.time)
-      );
-      const newDropTimes = new Set(
-        slotsToCreate.filter((s: any) => s.type === 'drop').map((s: any) => s.time)
-      );
-
-      // Find all inactive overrides for this vehicle
-      const staleOverrides = await VehicleScheduleSlot.find({
-        vehicle_id,
-        date: { $ne: '' },
-        status: 'inactive',
-      }).lean();
-
-      const staleIds = staleOverrides
-        .filter((s: any) => {
-          const relevantTimes = s.type === 'pickup' ? newPickupTimes : newDropTimes;
-          return !relevantTimes.has(s.time);
-        })
-        .map((s: any) => s._id);
-
-      if (staleIds.length > 0) {
-        await VehicleScheduleSlot.deleteMany({ _id: { $in: staleIds } });
-      }
+      // Replace existing slots for this vehicle on the target dates
+      await VehicleScheduleSlot.deleteMany({ vehicle_id, date: { $in: targetDates } });
 
     } else {
-      // Single type mode (pickup or drop) — existing behavior
-      const { station_name, date } = body;
-      if (!station_name || !date) {
+      // Single type mode (pickup or drop)
+      const { station_name } = body;
+      if (!station_name) {
         return NextResponse.json(
-          { error: 'station_name and date are required for single type mode' },
+          { error: 'station_name is required for single type mode' },
           { status: 400 }
         );
       }
 
-      for (let m = startMin; m < endMin; m += interval) {
-        slotsToCreate.push({
-          vehicle_id,
-          station_name,
-          type,
-          date,
-          time: formatTime(m),
-          status: 'active',
-        });
+      for (const d of targetDates) {
+        for (let m = startMin; m < endMin; m += interval) {
+          slotsToCreate.push({
+            vehicle_id,
+            station_name,
+            type,
+            date: d,
+            time: formatTime(m),
+            status: 'active',
+          });
+        }
       }
 
-      await VehicleScheduleSlot.deleteMany({ vehicle_id, type, date, station_name });
+      await VehicleScheduleSlot.deleteMany({ vehicle_id, type, date: { $in: targetDates }, station_name });
     }
 
     if (slotsToCreate.length === 0) {

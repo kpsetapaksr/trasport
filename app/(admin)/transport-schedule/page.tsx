@@ -143,6 +143,8 @@ export default function TransportSchedulePage() {
     drop_station: '',
     travel_time: '30',
     type: 'both' as 'pickup' | 'drop' | 'both',
+    apply_to: 'day' as 'day' | 'month',
+    skip_weekends: false,
     date: new Date().toISOString().split('T')[0],
     start_time: '07:00',
     end_time: '18:00',
@@ -157,6 +159,8 @@ export default function TransportSchedulePage() {
       drop_station: '',
       travel_time: '30',
       type: 'both',
+      apply_to: 'day',
+      skip_weekends: false,
       date,
       start_time: '07:00',
       end_time: '18:00',
@@ -373,8 +377,12 @@ export default function TransportSchedulePage() {
       toast({ title: 'Validation Error', description: 'Please select both station and hospital', variant: 'destructive' })
       return
     }
-    if (form.type !== 'both' && (!form.station_name || !form.date)) {
-      toast({ title: 'Validation Error', description: 'Missing required fields', variant: 'destructive' })
+    if (form.type !== 'both' && !form.station_name) {
+      toast({ title: 'Validation Error', description: 'Please select a station', variant: 'destructive' })
+      return
+    }
+    if (!form.date) {
+      toast({ title: 'Validation Error', description: form.apply_to === 'month' ? 'Please choose a month' : 'Please choose a date', variant: 'destructive' })
       return
     }
     const interval = parseInt(form.interval)
@@ -389,6 +397,11 @@ export default function TransportSchedulePage() {
 
     setSaving(true)
     try {
+      // Date scope: a single day, or every day in a month (optionally skipping weekends)
+      const scope = form.apply_to === 'month'
+        ? { month: form.date.slice(0, 7), skip_weekends: form.skip_weekends }
+        : { date: form.date }
+
       const payload = form.type === 'both'
         ? {
             vehicle_id: form.vehicle_id,
@@ -399,15 +412,16 @@ export default function TransportSchedulePage() {
             start_time: form.start_time,
             end_time: form.end_time,
             interval_minutes: form.interval,
+            ...scope,
           }
         : {
             vehicle_id: form.vehicle_id,
             station_name: form.station_name,
             type: form.type,
-            date: form.date,
             start_time: form.start_time,
             end_time: form.end_time,
             interval_minutes: form.interval,
+            ...scope,
           }
 
       const res = await adminFetch('/api/transport/vehicle-slots', {
@@ -1125,10 +1139,38 @@ export default function TransportSchedulePage() {
                  </div>
               </div>
 
-              {form.type === 'both' && (
-                <div className="bg-primary/5 rounded-2xl px-4 py-2.5 text-[10px] font-black text-primary uppercase tracking-widest flex items-center gap-2">
-                  <Repeat className="w-3 h-3" /> Creates recurring global slots (all dates)
+              {/* Schedule scope — a single day or every day in a month */}
+              <div className="grid grid-cols-2 gap-4">
+                <div className="space-y-2">
+                  <Label className="text-[10px] font-black uppercase text-slate-400 ml-1">Apply To</Label>
+                  <div className="flex p-1 bg-slate-100 rounded-2xl h-14 shadow-inner">
+                    {(['day', 'month'] as const).map((a) => (
+                      <button
+                        key={a}
+                        type="button"
+                        onClick={(e) => { e.preventDefault(); setForm({ ...form, apply_to: a }) }}
+                        className={`flex-1 rounded-xl text-[10px] font-black tracking-widest uppercase transition-all duration-200 ${form.apply_to === a ? 'bg-white shadow-md text-primary' : 'text-slate-400 hover:text-slate-600'}`}
+                      >
+                        {a === 'day' ? 'This Day' : 'Whole Month'}
+                      </button>
+                    ))}
+                  </div>
                 </div>
+                <div className="space-y-2">
+                  <Label className="text-[10px] font-black uppercase text-slate-400 ml-1">{form.apply_to === 'month' ? 'Target Month' : 'Target Date'}</Label>
+                  <Input
+                    type={form.apply_to === 'month' ? 'month' : 'date'}
+                    value={form.apply_to === 'month' ? form.date.slice(0, 7) : form.date}
+                    onChange={(e) => setForm({ ...form, date: form.apply_to === 'month' ? (e.target.value ? `${e.target.value}-01` : '') : e.target.value })}
+                    className="h-14 rounded-2xl bg-slate-50 border-none font-bold"
+                  />
+                </div>
+              </div>
+              {form.apply_to === 'month' && (
+                <label className="flex items-center gap-2.5 bg-slate-50 rounded-2xl px-4 py-3 cursor-pointer">
+                  <input type="checkbox" checked={form.skip_weekends} onChange={(e) => setForm({ ...form, skip_weekends: e.target.checked })} className="w-4 h-4 accent-primary" />
+                  <span className="text-[10px] font-black text-slate-500 uppercase tracking-widest">Skip weekends (Sat &amp; Sun)</span>
+                </label>
               )}
 
               {/* Stations — context-aware labels */}
@@ -1150,18 +1192,12 @@ export default function TransportSchedulePage() {
                   </div>
                 </div>
               ) : (
-                <div className="grid grid-cols-2 gap-4">
-                  <div className="space-y-2">
-                    <Label className="text-[10px] font-black uppercase text-slate-400 ml-1">Station</Label>
-                    <Select value={form.station_name} onValueChange={(v) => setForm({ ...form, station_name: v })}>
-                      <SelectTrigger className="h-14 rounded-2xl bg-slate-50 border-none font-bold ring-0 focus:ring-2 focus:ring-primary/20"><SelectValue placeholder="Which station?" /></SelectTrigger>
-                      <SelectContent className="rounded-2xl border-none shadow-xl">{stations.filter(s => s.status === 'active').map((s) => (<SelectItem key={s._id} value={s.station_name}>{s.station_name}</SelectItem>))}</SelectContent>
-                    </Select>
-                  </div>
-                  <div className="space-y-2">
-                    <Label className="text-[10px] font-black uppercase text-slate-400 ml-1">Target Date</Label>
-                    <Input type="date" value={form.date} onChange={(e) => setForm({ ...form, date: e.target.value })} className="h-14 rounded-2xl bg-slate-50 border-none font-bold" />
-                  </div>
+                <div className="space-y-2">
+                  <Label className="text-[10px] font-black uppercase text-slate-400 ml-1">Station</Label>
+                  <Select value={form.station_name} onValueChange={(v) => setForm({ ...form, station_name: v })}>
+                    <SelectTrigger className="h-14 rounded-2xl bg-slate-50 border-none font-bold ring-0 focus:ring-2 focus:ring-primary/20"><SelectValue placeholder="Which station?" /></SelectTrigger>
+                    <SelectContent className="rounded-2xl border-none shadow-xl">{stations.filter(s => s.status === 'active').map((s) => (<SelectItem key={s._id} value={s.station_name}>{s.station_name}</SelectItem>))}</SelectContent>
+                  </Select>
                 </div>
               )}
 
@@ -1245,7 +1281,7 @@ export default function TransportSchedulePage() {
               <DialogFooter className="gap-3 pt-2">
                  <Button variant="ghost" onClick={() => setDialogOpen(false)} className="flex-1 h-16 rounded-[1.5rem] font-black uppercase text-[10px] tracking-widest opacity-40">Abort</Button>
                  <Button onClick={handleSave} disabled={saving || previewSlots.totalCount === 0} className="flex-[2] h-16 rounded-[1.5rem] font-black uppercase text-[10px] tracking-[0.2em] shadow-2xl shadow-primary/20">
-                    {saving ? <Loader2 className="animate-spin" /> : `Deploy (${previewSlots.totalCount} slots)`}
+                    {saving ? <Loader2 className="animate-spin" /> : `Deploy (${previewSlots.totalCount} slots${form.apply_to === 'month' ? ' / day' : ''})`}
                  </Button>
               </DialogFooter>
            </div>

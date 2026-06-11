@@ -79,10 +79,13 @@ export async function GET(request: NextRequest) {
       return NextResponse.json({ error: 'date parameter is required' }, { status: 400 });
     }
 
-    // Normalize date and prepare query for multiple formats
+    // Normalize date and prepare query for multiple formats.
+    // IMPORTANT: only the requested date (and its format variants) are matched.
+    // We intentionally do NOT include '' / null here — slots are date-scoped, so a
+    // date with no slots must return zero slots ("No slots available").
     let normalizedDate = date;
-    const dateVariations = [date, '', null];
-    
+    const dateVariations = [date];
+
     // Handle DD-MM-YYYY or DD/MM/YYYY
     const dateMatch = date.match(/^(\d{2})[-/](\d{2})[-/](\d{4})$/);
     if (dateMatch) {
@@ -137,9 +140,11 @@ export async function GET(request: NextRequest) {
     const buffer = settings.buffer_before_appointment || 60;
     const appointmentDuration = settings.appointment_duration_minutes || 30;
 
-    // Filter slots - ignoring 'inactive' status for now to ensure visibility
+    // Filter out slots that are not bookable for this date.
+    // 'deleted' = removed; 'inactive' = blocked by admin for this date.
     const scheduleSlots = filteredByStation.filter((s: any) => {
       if (s.status === 'deleted') return false;
+      if (s.status === 'inactive') return false;
       return true;
     });
 
