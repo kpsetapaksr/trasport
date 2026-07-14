@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server';
 import dbConnect from '@/lib/db';
 import { TransportRequest } from '@/lib/models';
+import { reconcileTransportRequests } from '@/lib/sync-transport';
 
 // GET - List all transport requests
 export async function GET(request: NextRequest) {
@@ -15,6 +16,16 @@ export async function GET(request: NextRequest) {
     const page = Math.max(1, parseInt(searchParams.get('page') || '1'));
     const limit = Math.max(1, parseInt(searchParams.get('limit') || '50'));
     const skip = (page - 1) * limit;
+
+    // Self-heal any requests whose clinic appointment was rescheduled, BEFORE
+    // applying the date filter — a record whose appointment moved to another day
+    // is still stored under its old date until reconciled, so we sync the full
+    // set of active requests first so it lands on the correct day.
+    const activeReqs = await TransportRequest.find({
+      status: { $in: ['pending', 'confirmed'] },
+      appointment_id: { $exists: true, $ne: null },
+    }).select('_id appointment_id appointment_date appointment_time').lean();
+    await reconcileTransportRequests(activeReqs as any);
 
     const filter: any = {};
 

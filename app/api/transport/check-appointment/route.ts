@@ -2,6 +2,7 @@ import { NextRequest, NextResponse } from 'next/server';
 import dbConnect from '@/lib/db';
 import { TransportRequest, Vehicle } from '@/lib/models';
 import { getClinicalModels } from '@/lib/clinical-models';
+import { reconcileTransportRequests } from '@/lib/sync-transport';
 
 // Ensure Vehicle model is registered for populate
 void Vehicle;
@@ -62,6 +63,15 @@ export async function POST(request: NextRequest) {
       : { id: { $in: doctorIds } };
     const doctors = await Doctor.find(doctorQuery).lean();
     const doctorMap = new Map(doctors.map((d: any) => [d.id || d._id?.toString(), d]));
+
+    // Self-heal this patient's transport requests against their live clinic
+    // appointments (rescheduled appointments leave the transport date/time stale).
+    const patientReqs = await TransportRequest.find({
+      ic_number: { $regex: new RegExp(`^${cleanedIC}$`, 'i') },
+      status: { $in: ['pending', 'confirmed'] },
+      appointment_id: { $exists: true, $ne: null },
+    }).select('_id appointment_id appointment_date appointment_time').lean();
+    await reconcileTransportRequests(patientReqs as any);
 
     // Check for existing transport bookings for this IC (include completed to prevent re-booking)
     const existingTransport = await TransportRequest.find({
