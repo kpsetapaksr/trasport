@@ -13,7 +13,7 @@ void Vehicle;
 export async function POST(request: NextRequest) {
   try {
     await dbConnect();
-    const { Appointment, Doctor } = await getClinicalModels();
+    const { Appointment, Doctor, Patient } = await getClinicalModels();
     const { ic_number } = await request.json();
 
     if (!ic_number) {
@@ -131,6 +131,17 @@ export async function POST(request: NextRequest) {
       }
     }
 
+    // Resolve the patient's full registered (MyKad) name from the registry, so
+    // the portal always shows the full name regardless of what name is stored on
+    // an individual appointment.
+    const patient = await Patient.findOne({
+      $or: [
+        { ic: { $regex: new RegExp(`^${cleanedIC}$`, 'i') } },
+        { ic: dashIC },
+      ],
+    }).select('name').lean() as { name?: string } | null;
+    const registryName = patient?.name;
+
     // Enrich appointments with doctor info and transport booking status
     const enriched = appointments.map((apt: any) => {
       const doctor = doctorMap.get(apt.doctorId);
@@ -149,6 +160,7 @@ export async function POST(request: NextRequest) {
 
       return {
         ...apt,
+        patientName: registryName || apt.patientName,
         doctorName: doctor?.name || 'Unknown',
         doctorSpecialization: doctor?.specialization || '',
         transportBooked: allBooked,
