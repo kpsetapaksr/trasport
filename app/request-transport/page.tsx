@@ -417,7 +417,7 @@ export default function RequestTransportPage() {
                            </div>
                            {apt.doctorName && (
                               <div className="flex items-center gap-2 text-slate-500 text-xs">
-                                 <User className="w-3.5 h-3.5" /> Dr. {apt.doctorName} {apt.doctorSpecialization ? `(${apt.doctorSpecialization})` : ''}
+                                 <User className="w-3.5 h-3.5" /> {/^dr\.?\s/i.test(apt.doctorName) ? apt.doctorName : `Dr. ${apt.doctorName}`} {apt.doctorSpecialization ? `(${apt.doctorSpecialization})` : ''}
                               </div>
                            )}
                            {apt.hasAnyBooking && apt.transportBookings?.length > 0 ? (
